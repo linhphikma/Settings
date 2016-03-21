@@ -27,12 +27,13 @@
             android:key="bluros_custom_header"
             android:title="@string/bluros_custom_header_options"
             android:fragment="com.android.settings.rr.CustomHeader" />
-
+    
     <PreferenceScreen
             android:key="bluros_header"
             android:title="@string/bluros_header_options"
             android:fragment="com.android.settings.rr.Header" />
 
+<<<<<<< HEAD
     <PreferenceScreen
             android:key="bluros_header_fonts"
             android:title="@string/bluros_header_fonts"
@@ -43,6 +44,8 @@
             android:title="@string/bluros_header_colors"
             android:fragment="com.android.settings.rr.HeaderColors" />
 
+=======
+>>>>>>> fc61dc0... Settings: Cleanup [1/2]
 	   </PreferenceCategory>
 
 </PreferenceScreen>
