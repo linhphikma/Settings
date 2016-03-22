@@ -59,7 +59,7 @@ public class LockscreenUI extends SettingsPreferenceFragment  implements OnPrefe
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        addPreferencesFromResource(R.xml.rr_ls_ui);
+        addPreferencesFromResource(R.xml.bluros_ls_ui);
         ContentResolver resolver = getActivity().getContentResolver();
 
 

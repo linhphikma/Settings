@@ -28,14 +28,14 @@ import android.preference.Preference.OnPreferenceChangeListener;
 import android.preference.SwitchPreference;
 import android.provider.Settings;
 import com.android.settings.util.Helpers;
-import org.cyanogenmod.internal.util.CmLockPatternUtils;
+import org.bluros.internal.util.CmLockPatternUtils;
 import com.android.settings.Utils;
 import android.provider.SearchIndexableResource;
 import com.android.settings.search.BaseSearchIndexProvider;
 import com.android.settings.search.Indexable;
 
 import com.android.internal.logging.MetricsLogger;
-import cyanogenmod.providers.CMSettings;
+import bluros.providers.CMSettings;
 
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;

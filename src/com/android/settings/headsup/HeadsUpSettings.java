@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2014 The CyanogenMod Project
+ * Copyright (C) 2014 The BlurOS Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -32,16 +32,16 @@ import android.widget.Toast;
 
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
-import com.android.settings.cyanogenmod.PackageListAdapter;
-import com.android.settings.cyanogenmod.PackageListAdapter.PackageItem;
+import com.android.settings.bluros.PackageListAdapter;
+import com.android.settings.bluros.PackageListAdapter.PackageItem;
 
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import cyanogenmod.providers.CMSettings;
-import org.cyanogenmod.internal.logging.CMMetricsLogger;
+import bluros.providers.CMSettings;
+import org.bluros.internal.logging.CMMetricsLogger;
 
 public class HeadsUpSettings extends SettingsPreferenceFragment
         implements AdapterView.OnItemLongClickListener, Preference.OnPreferenceClickListener {

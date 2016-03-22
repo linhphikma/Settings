@@ -43,7 +43,7 @@ private static final String TAG = "MainSettings";
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        addPreferencesFromResource(R.xml.rr_header);
+        addPreferencesFromResource(R.xml.bluros_header);
     }
 
     protected int getMetricsCategory()

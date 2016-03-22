@@ -97,13 +97,73 @@
     <dashboard-category
             android:id="@+id/device_personalization"
             android:title="@string/header_category_personalization" >
-        <!-- ResurrectionRemix -->
+            
+       <dashboard-tile
+                android:id="@+id/status_bar_settings"
+                android:title="@string/status_bar_title"
+                android:fragment="com.android.settings.bluros.StatusBarSettings"
+                android:icon="@drawable/bluros_statusbar_icon"
+                />
+
+     <!-- Notification drawer -->
+       <dashboard-tile
+            android:id="@+id/notification_drawer_settings"
+            android:title="@string/notification_drawer_title"
+            android:fragment="com.android.settings.rr.NotificationDrawerSettings"
+            android:icon="@drawable/bluros_notification_drawer_icon"
+                />
+
+    <!-- QS Panel -->
+      <dashboard-tile
+            android:id="@+id/Qs_customizations"
+            android:title="@string/bluros_qs_title"
+            android:fragment="com.android.settings.rr.QsPanel" 
+	    android:icon="@drawable/bluros_quick_settings_icon" />
+    
+          
+       <dashboard-tile
+        android:key="navbar"
+        android:fragment="com.android.settings.rr.Navbar"
+        android:title="@string/bluros_navbar_settings" 
+        android:icon="@drawable/bluros_navbar_icon"/>
+
+
+       <dashboard-tile
+                android:id="@+id/button_settings"
+                android:title="@string/button_pref_title"
+                android:fragment="com.android.settings.ButtonSettings"
+                android:icon="@drawable/bluros_buttons_icon"
+		/>
+
+       <dashboard-tile
+            android:id="@+id/recents_settings"
+            android:fragment="com.android.settings.rr.RecentsSettings"
+            android:title="@string/recents_settings_title"
+            android:icon="@drawable/bluros_recents_icon" />
+
+
+       <dashboard-tile
+	    android:title="@string/bluros_lockscreen_title"	
+            android:key="lock_screen_general_category"
+            android:fragment="com.android.settings.rr.LockScreenSettings"  
+            android:icon="@drawable/bluros_lock_icon"
+            />
+
+        <!-- Animation Settings -->
         <dashboard-tile
-                android:id="@+id/main_settings"
-                android:title="@string/rr_settings_title"
-                android:fragment="com.android.settings.rr.MainSettings"
-                android:icon="@drawable/ic_rr_tools_tint"
-                />        
+            android:key="animation_settings"
+            android:title="@string/animation_title"
+            android:fragment="com.android.settings.rr.animation.AnimationSettings" 
+            android:icon="@drawable/bluros_animations_icon"
+            />
+
+     <!-- Gestures -->
+		<dashboard-tile
+           android:key="gestures"
+           android:title="@string/gestures_settings"
+		   android:fragment="com.android.settings.rr.MultiTasking" 
+	       android:icon="@drawable/bluros_gestures_icon"/>
+                 
         <!-- Themes -->
         <!-- NOTE: Intent.parseIntent looks for "categories" tag and not "category" -->
         <dashboard-tile
@@ -112,7 +172,7 @@
                 android:icon="@drawable/ic_settings_themes">
             <intent
                     android:action="android.intent.action.MAIN" >
-                <categories android:name="cyanogenmod.intent.category.APP_THEMES" />
+                <categories android:name="bluros.intent.category.APP_THEMES" />
             </intent>
         </dashboard-tile>
 
@@ -153,9 +213,9 @@
                 android:id="@+id/oclick"
                 android:icon="@drawable/ic_settings_oclick">
             <intent
-                    android:action="com.cyanogenmod.action.LAUNCH_BLUETOOTH_INPUT_SETTINGS"
-                    android:targetPackage="com.cyanogenmod.settings.device"
-                    android:targetClass="com.cyanogenmod.settings.device.BluetoothInputSettings" />
+                    android:action="com.bluros.action.LAUNCH_BLUETOOTH_INPUT_SETTINGS"
+                    android:targetPackage="com.bluros.settings.device"
+                    android:targetClass="com.bluros.settings.device.BluetoothInputSettings" />
         </dashboard-tile>
 
         <!-- Gestures -->
@@ -164,9 +224,9 @@
                 android:title="@string/gesture_settings_title"
                 android:icon="@drawable/ic_settings_gestures">
             <intent
-                    android:action="com.cyanogenmod.action.LAUNCH_TOUCHSCREEN_GESTURE_SETTINGS"
-                    android:targetPackage="com.cyanogenmod.settings.device"
-                    android:targetClass="com.cyanogenmod.settings.device.TouchscreenGestureSettings" />
+                    android:action="com.bluros.action.LAUNCH_TOUCHSCREEN_GESTURE_SETTINGS"
+                    android:targetPackage="com.bluros.settings.device"
+                    android:targetClass="com.bluros.settings.device.TouchscreenGestureSettings" />
         </dashboard-tile>
 
         <!-- Battery -->
@@ -244,12 +304,12 @@
         <!-- Marker for where to place external tiles in this category -->
         <external-tiles />
 
-        <!-- CyanogenMod Privacy Settings -->
+        <!-- BlurOS Privacy Settings -->
         <!-- This is the 'real' Privacy items and includes Privacy Guard, Blacklist & WhisperPush -->
         <dashboard-tile
-                android:id="@+id/privacy_settings_cyanogenmod"
-                android:title="@string/privacy_settings_cyanogenmod_title"
-                android:fragment="com.android.settings.cyanogenmod.PrivacySettings"
+                android:id="@+id/privacy_settings_bluros"
+                android:title="@string/privacy_settings_bluros_title"
+                android:fragment="com.android.settings.bluros.PrivacySettings"
                 android:icon="@drawable/ic_settings_privacy"
                 />
 
@@ -339,7 +399,7 @@
     <dashboard-tile
 		android:id="@+id/kernel_adiutor"
                 android:title="@string/kernel_aduitor"
-		android:icon="@drawable/rr_performance_icon">
+		android:icon="@drawable/bluros_performance_icon">
  	<intent
                     android:action="android.intent.action.MAIN"
                     android:targetPackage="com.grarak.kerneladiutor"

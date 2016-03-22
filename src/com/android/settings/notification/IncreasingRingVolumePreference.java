@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2014 CyanogenMod Project
+ * Copyright (C) 2014 BlurOS Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -36,7 +36,7 @@ import android.widget.SeekBar;
 import android.widget.TextView;
 
 import com.android.settings.R;
-import cyanogenmod.providers.CMSettings;
+import bluros.providers.CMSettings;
 
 public class IncreasingRingVolumePreference extends Preference implements
         PreferenceManager.OnActivityStopListener, Handler.Callback,

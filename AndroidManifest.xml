@@ -84,11 +84,11 @@
     <uses-permission android:name="android.permission.CHANGE_APP_IDLE_STATE" />
     <uses-permission android:name="android.permission.PEERS_MAC_ADDRESS"/>
     <uses-permission android:name="android.permission.ACCESS_KEYGUARD_SECURE_STORAGE" />
-    <uses-permission android:name="cyanogenmod.permission.HARDWARE_ABSTRACTION_ACCESS" />
-    <uses-permission android:name="cyanogenmod.permission.FINISH_SETUP" />
-    <uses-permission android:name="cyanogenmod.permission.MODIFY_PROFILES" />
-    <uses-permission android:name="cyanogenmod.permission.PROTECTED_APP" />
-    <uses-permission android:name="cyanogenmod.permission.PERFORMANCE_ACCESS" />
+    <uses-permission android:name="bluros.permission.HARDWARE_ABSTRACTION_ACCESS" />
+    <uses-permission android:name="bluros.permission.FINISH_SETUP" />
+    <uses-permission android:name="bluros.permission.MODIFY_PROFILES" />
+    <uses-permission android:name="bluros.permission.PROTECTED_APP" />
+    <uses-permission android:name="bluros.permission.PERFORMANCE_ACCESS" />
 
     <application android:label="@string/settings_label"
             android:icon="@mipmap/ic_launcher_settings"
@@ -1972,7 +1972,7 @@
         <activity android:name=".rr.gestureanywhere.GestureAnywhereBuilderActivity" />
         <activity android:name=".rr.gestureanywhere.GestureAnywhereCreateGestureActivity" />
 
-	<activity android:name=".cyanogenmod.SpamList" />
+	<activity android:name=".bluros.SpamList" />
 	
 	<!-- Navigation settings activity. -->
         <activity android:name="Settings$NavigationSettingsActivity"
@@ -2281,7 +2281,7 @@
             android:theme="@style/CryptKeeperBlankTheme"
         />
 
-        <!-- CyanogenMod activities Start -->
+        <!-- BlurOS activities Start -->
         <activity android:name="Settings$ProfilesSettingsActivity"
                 android:label="@string/profile_settings"
                 android:taskAffinity=""
@@ -2353,7 +2353,7 @@
                 <category android:name="android.intent.category.SHORTCUT" />
             </intent-filter>
             <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
-                android:value="com.android.settings.cyanogenmod.DisplayRotation" />
+                android:value="com.android.settings.bluros.DisplayRotation" />
             <meta-data android:name="com.android.settings.TOP_LEVEL_HEADER_ID"
                 android:resource="@id/display_and_lights_settings" />
         </activity>
@@ -2371,7 +2371,7 @@
         </activity-alias>
 
 
-        <activity android:name=".cyanogenmod.SpamList" />
+        <activity android:name=".bluros.SpamList" />
 
         <!-- "Blacklist settings" UI, used only on voice-capable phone devices. -->
         <activity android:name="Settings$BlacklistSettingsActivity"
@@ -2414,7 +2414,7 @@
                 android:value="com.android.settings.contributors.ContributorsCloudFragment" />
         </activity>
 
-        <!-- CyanogenMod activities End -->
+        <!-- BlurOS activities End -->
 
         <!-- Pseudo-activity used to provide an intent-filter entry point to encryption settings -->
         <activity android:name="Settings$CryptKeeperSettingsActivity"
@@ -2727,7 +2727,7 @@
         <activity android:name=".notificationlight.NotificationLightSettings" />
         <activity android:name=".notificationlight.BatteryLightSettings" />
 
-        <activity android:name=".cyanogenmod.PrivacySettings" />
+        <activity android:name=".bluros.PrivacySettings" />
 
         <activity android:name=".applications.ProtectedAppsActivity"
                   android:label="@string/protected_apps"
@@ -2771,7 +2771,7 @@
             </intent-filter>
         </receiver>
 
-        <receiver android:name=".cyanogenmod.BootReceiver" android:enabled="true">$
+        <receiver android:name=".bluros.BootReceiver" android:enabled="true">$
             <intent-filter android:priority="2147483647">$
                 <action android:name="android.intent.action.BOOT_COMPLETED" />$
             </intent-filter>$
@@ -2828,7 +2828,7 @@
 
         <!-- Resurrection Settings -->
         <activity android:name="Settings$MainSettingsActivity"
-             android:label="@string/rr_settings_title"
+             android:label="@string/bluros_settings_title"
              android:taskAffinity="">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -2998,11 +2998,11 @@
 
         <receiver android:name=".profiles.SetupDefaultProfileReceiver">
             <intent-filter>
-                <action android:name="com.cyanogenmod.setupwizard.SETUP_FINISHED" />
+                <action android:name="com.bluros.setupwizard.SETUP_FINISHED" />
             </intent-filter>
         </receiver>
 
-        <receiver android:name=".cyanogenmod.BootReceiver" android:enabled="true">
+        <receiver android:name=".bluros.BootReceiver" android:enabled="true">
             <intent-filter android:priority="2147483647">
                 <action android:name="android.intent.action.BOOT_COMPLETED" />
             </intent-filter>
@@ -3011,14 +3011,14 @@
         <service android:label="LtoService"
             android:enabled="true"
             android:exported="false"
-            android:name=".cyanogenmod.LtoService">
+            android:name=".bluros.LtoService">
         </service>
 
         <receiver
-            android:name=".cyanogenmod.ProtectedAppsReceiver"
-            android:permission="cyanogenmod.permission.PROTECTED_APP">
+            android:name=".bluros.ProtectedAppsReceiver"
+            android:permission="bluros.permission.PROTECTED_APP">
             <intent-filter>
-                <action android:name="cyanogenmod.intent.action.PACKAGE_PROTECTED" />
+                <action android:name="bluros.intent.action.PACKAGE_PROTECTED" />
             </intent-filter>
         </receiver>
 

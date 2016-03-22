@@ -42,7 +42,7 @@ public class QsVibrate extends SettingsPreferenceFragment {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        addPreferencesFromResource(R.xml.rr_qs_vibrate);
+        addPreferencesFromResource(R.xml.bluros_qs_vibrate);
     }
 
     protected int getMetricsCategory()

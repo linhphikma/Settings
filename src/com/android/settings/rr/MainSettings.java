@@ -43,7 +43,7 @@ private static final String TAG = "MainSettings";
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        addPreferencesFromResource(R.xml.rr_main_settings);
+        addPreferencesFromResource(R.xml.bluros_main_settings);
     }
 
     protected int getMetricsCategory()
@@ -59,7 +59,7 @@ private static final String TAG = "MainSettings";
                             new ArrayList<SearchIndexableResource>();
 
                     SearchIndexableResource sir = new SearchIndexableResource(context);
-                   sir.xmlResId = R.xml.rr_main_settings;
+                   sir.xmlResId = R.xml.bluros_main_settings;
                     result.add(sir);
 
                     return result;

@@ -62,7 +62,7 @@ public class LockScreenSecurity extends SettingsPreferenceFragment  implements O
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        addPreferencesFromResource(R.xml.rr_ls_security);
+        addPreferencesFromResource(R.xml.bluros_ls_security);
         ContentResolver resolver = getActivity().getContentResolver();
 
  	mMaxKeyguardNotifConfig = (SeekBarPreference) findPreference(LOCKSCREEN_MAX_NOTIF_CONFIG);

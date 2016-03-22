@@ -1,6 +1,6 @@
 /*
  * Copyright (C) 2008 The Android Open Source Project
- * Copyright (C) 2013-2014 The CyanogenMod Project
+ * Copyright (C) 2013-2014 The BlurOS Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -84,7 +84,7 @@ import com.android.settings.search.BaseSearchIndexProvider;
 import com.android.settings.search.Indexable;
 import com.android.settings.widget.SwitchBar;
 import com.android.settings.widget.SeekBarPreferenceCham;
-import cyanogenmod.providers.CMSettings;
+import bluros.providers.CMSettings;
 import com.android.settings.util.Helpers;
 
 import dalvik.system.VMRuntime;

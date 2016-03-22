@@ -84,7 +84,7 @@ import com.android.settings.applications.WriteSettingsDetails;
 import com.android.settings.blacklist.BlacklistSettings;
 import com.android.settings.bluetooth.BluetoothSettings;
 import com.android.settings.contributors.ContributorsCloudFragment;
-import com.android.settings.cyanogenmod.DisplayRotation;
+import com.android.settings.bluros.DisplayRotation;
 import com.android.settings.dashboard.DashboardCategory;
 import com.android.settings.dashboard.DashboardSummary;
 import com.android.settings.dashboard.DashboardTile;
@@ -297,12 +297,11 @@ public class SettingsActivity extends Activity
             R.id.accessibility_settings,
             R.id.print_settings,
             R.id.home_settings,
-            R.id.main_settings,
 	    R.id.button_settings,
 	    R.id.app_circle_bar,
 	    R.id.gesture_anywhere,
             R.id.dashboard,
-            R.id.privacy_settings_cyanogenmod
+            R.id.privacy_settings_bluros
     };
 
     private static final String[] ENTRY_FRAGMENTS = {
@@ -382,8 +381,8 @@ public class SettingsActivity extends Activity
             DrawOverlayDetails.class.getName(),
             WriteSettingsDetails.class.getName(),
             LiveDisplay.class.getName(),
-            com.android.settings.cyanogenmod.DisplayRotation.class.getName(),
-            com.android.settings.cyanogenmod.PrivacySettings.class.getName(),
+            com.android.settings.bluros.DisplayRotation.class.getName(),
+            com.android.settings.bluros.PrivacySettings.class.getName(),
             BlacklistSettings.class.getName(),
             ContributorsCloudFragment.class.getName(),
             ProfilesSettings.class.getName(),

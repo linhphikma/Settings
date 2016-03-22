@@ -41,9 +41,9 @@ import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
 import com.android.settings.R;
-import com.android.settings.cyanogenmod.ProtectedAppsReceiver;
+import com.android.settings.bluros.ProtectedAppsReceiver;
 
-import cyanogenmod.providers.CMSettings;
+import bluros.providers.CMSettings;
 
 import java.util.ArrayList;
 import java.util.Collections;

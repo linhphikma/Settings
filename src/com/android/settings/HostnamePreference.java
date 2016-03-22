@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2013 The CyanogenMod project
+ * Copyright (C) 2013 The BlurOS project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -25,7 +25,7 @@ import android.text.Spanned;
 import android.util.AttributeSet;
 import android.util.Log;
 
-import cyanogenmod.providers.CMSettings;
+import bluros.providers.CMSettings;
 
 public class HostnamePreference extends EditTextPreference {
 

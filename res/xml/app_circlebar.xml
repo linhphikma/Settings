@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Copyright (C) 2014 The Resurrection Remix Project
+<!-- Copyright (C) 2014 The BlurOS Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -19,7 +19,7 @@
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
     android:title="@string/category_app_circle_bar_title" >
 
-    <com.android.settings.cyanogenmod.SystemSettingSwitchPreference
+    <com.android.settings.bluros.SystemSettingSwitchPreference
         android:key="enable_app_circle_bar"
         android:title="@string/app_circle_bar_title"
         android:summary="@string/app_circle_bar_summary" />

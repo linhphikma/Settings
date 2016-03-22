@@ -53,7 +53,7 @@
             android:persistent="false"
             android:dependency="doze_trigger_notification" />
 
-    <com.android.settings.cyanogenmod.SystemSettingSwitchPreference
+    <com.android.settings.bluros.SystemSettingSwitchPreference
             android:key="doze_notification_invert_enabled"
             android:title="@string/doze_notification_color_invert_title"
             android:summaryOn="@string/doze_notification_color_invert_summary_on"

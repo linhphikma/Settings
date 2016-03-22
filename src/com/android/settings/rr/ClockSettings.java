@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2015 The Resurrection Remix Project
+ * Copyright (C) 2015 The BlurOS Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -62,7 +62,7 @@ import java.util.Date;
 import java.util.List;
 import java.util.Map;
 
-import cyanogenmod.providers.CMSettings;
+import bluros.providers.CMSettings;
 
 import net.margaritov.preference.colorpicker.ColorPickerPreference;
 
@@ -109,7 +109,7 @@ public class ClockSettings extends SettingsPreferenceFragment
 
     private PreferenceScreen createCustomView() {	
 	mCheckPreferences = false;
-  	addPreferencesFromResource(R.xml.rr_clock);
+  	addPreferencesFromResource(R.xml.bluros_clock);
 
  	PreferenceScreen prefSet = getPreferenceScreen();
         ContentResolver resolver = getActivity().getContentResolver();
@@ -462,7 +462,7 @@ private void enableStatusBarClockDependents() {
                             new ArrayList<SearchIndexableResource>();
 
                     SearchIndexableResource sir = new SearchIndexableResource(context);
-                   sir.xmlResId = R.xml.rr_clock;
+                   sir.xmlResId = R.xml.bluros_clock;
                     result.add(sir);
 
                     return result;

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright (C) 2014 The BlurOS Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:title="@string/bluros_qs_title">
+
+
+    <PreferenceCategory
+        android:key="notification_qs"
+        android:title="@string/bluros_qs_cat" >
+
+
+       <ListPreference
+            android:key="qs_quick_pulldown"
+            android:title="@string/status_bar_quick_qs_pulldown_title"
+            android:entries="@array/status_bar_quick_qs_pulldown_entries"
+            android:entryValues="@array/status_bar_quick_qs_pulldown_values" />
+
+   
+       <ListPreference
+            android:key="smart_pulldown"
+            android:title="@string/smart_pulldown_title"
+            android:entries="@array/smart_pulldown_entries"
+            android:entryValues="@array/smart_pulldown_values"
+            android:persistent="false" />
+
+
+    <!-- Qs Vibrate Panel -->
+    <PreferenceScreen
+            android:id="@+id/qs_vib_customizations"
+            android:title="@string/quick_settings_vibrate"
+            android:fragment="com.android.settings.rr.QsVibrate" />
+
+
+    <!-- Qs Colors -->
+    <PreferenceScreen
+            android:id="@+id/qs_colors"
+            android:title="@string/quick_settings_colors"
+	    android:summary="@string/qs_colors_summary"	
+            android:fragment="com.android.settings.rr.QsColors" />
+
+
+    <SwitchPreference
+        android:key="block_on_secure_keyguard"
+        android:title="@string/block_on_secure_keyguard_title"
+        android:summary="@string/block_on_secure_keyguard_summary"
+        android:persistent="false"
+        android:defaultValue="true"/>
+
+</PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="notification_qs"
+        android:title="@string/bluros_brightness_cat" >
+
+
+       <com.android.settings.bluros.CMSystemSettingSwitchPreference
+         android:key="qs_show_brightness_slider"
+         android:title="@string/qs_brightness_slider_title"
+         android:summary="@string/qs_brightness_slider_summary"
+         android:defaultValue="true"/>
+
+       <com.android.settings.bluros.SystemSettingSwitchPreference
+         android:key="brightness_icon"
+         android:title="@string/brightness_icon_title"
+         android:summary="@string/brightness_icon_summary"
+         android:dependency="qs_show_brightness_slider"
+         android:defaultValue="true"/>
+</PreferenceCategory>
+</PreferenceScreen>

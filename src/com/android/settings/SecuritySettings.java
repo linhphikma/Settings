@@ -56,14 +56,14 @@ import com.android.internal.widget.LockPatternUtils;
 import com.android.settings.rr.SeekBarPreference;
 import com.android.settings.Settings.LockScreenSettingsActivity;
 import com.android.settings.TrustAgentUtils.TrustAgentComponentInfo;
-import com.android.settings.cyanogenmod.LiveLockScreenSettings;
+import com.android.settings.bluros.LiveLockScreenSettings;
 import com.android.settings.fingerprint.FingerprintEnrollIntroduction;
 import com.android.settings.fingerprint.FingerprintSettings;
 import com.android.settings.search.BaseSearchIndexProvider;
 import com.android.settings.search.Index;
 import com.android.settings.search.Indexable;
 import com.android.settings.search.SearchIndexableRaw;
-import cyanogenmod.providers.CMSettings;
+import bluros.providers.CMSettings;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -133,7 +133,7 @@ public class SecuritySettings extends SettingsPreferenceFragment
 
     private static final int MY_USER_ID = UserHandle.myUserId();
 
-    private static final String LIVE_LOCK_SCREEN_FEATURE = "org.cyanogenmod.livelockscreen";
+    private static final String LIVE_LOCK_SCREEN_FEATURE = "org.bluros.livelockscreen";
 
     private PackageManager mPM;
     private DevicePolicyManager mDPM;

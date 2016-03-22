@@ -34,7 +34,7 @@ import android.preference.SwitchPreference;
 import com.android.settings.rr.SeekBarPreference;
 import android.provider.Settings;
 import com.android.settings.util.Helpers;
-import org.cyanogenmod.internal.util.CmLockPatternUtils;
+import org.bluros.internal.util.CmLockPatternUtils;
 import com.android.settings.Utils;
 import android.provider.SearchIndexableResource;
 import com.android.settings.search.BaseSearchIndexProvider;
@@ -45,7 +45,7 @@ import android.view.MenuInflater;
 import android.util.Log;
 
 import com.android.internal.logging.MetricsLogger;
-import cyanogenmod.providers.CMSettings;
+import bluros.providers.CMSettings;
 
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
@@ -73,7 +73,7 @@ public class HeaderFonts extends SettingsPreferenceFragment  implements Preferen
  @Override
     public void onCreate(Bundle icicle) {
         super.onCreate(icicle);
-        addPreferencesFromResource(R.xml.rr_header_fonts);
+        addPreferencesFromResource(R.xml.bluros_header_fonts);
         PreferenceScreen prefSet = getPreferenceScreen();
         final ContentResolver resolver = getActivity().getContentResolver();
 

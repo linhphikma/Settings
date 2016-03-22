@@ -1,5 +1,5 @@
 /*
-* Copyright (C) 2015 ResurrectionRemix Rom
+* Copyright (C) 2015 BlurOS Rom
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.

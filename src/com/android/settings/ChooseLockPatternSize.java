@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2012-2013 The CyanogenMod Project
+ * Copyright (C) 2012-2013 The BlurOS Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -24,7 +24,7 @@ import android.preference.PreferenceScreen;
 
 import com.android.internal.logging.MetricsConstants;
 import com.android.internal.widget.LockPatternUtils;
-import org.cyanogenmod.internal.logging.CMMetricsLogger;
+import org.bluros.internal.logging.CMMetricsLogger;
 
 public class ChooseLockPatternSize extends PreferenceActivity {
 

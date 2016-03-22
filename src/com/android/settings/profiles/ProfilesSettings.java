@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2012 The CyanogenMod Project
+ * Copyright (C) 2012 The BlurOS Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -39,15 +39,15 @@ import android.widget.FrameLayout;
 import android.widget.ListView;
 import android.widget.TextView;
 
-import cyanogenmod.app.Profile;
-import cyanogenmod.app.ProfileManager;
-import cyanogenmod.providers.CMSettings;
+import bluros.app.Profile;
+import bluros.app.ProfileManager;
+import bluros.providers.CMSettings;
 
 import com.android.settings.R;
 import com.android.settings.SettingsActivity;
 import com.android.settings.SettingsPreferenceFragment;
-import com.android.settings.cyanogenmod.CMBaseSystemSettingSwitchBar;
-import org.cyanogenmod.internal.logging.CMMetricsLogger;
+import com.android.settings.bluros.CMBaseSystemSettingSwitchBar;
+import org.bluros.internal.logging.CMMetricsLogger;
 
 import java.util.UUID;
 

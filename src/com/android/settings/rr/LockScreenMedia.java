@@ -54,7 +54,7 @@ public class LockScreenMedia extends SettingsPreferenceFragment  implements OnPr
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        addPreferencesFromResource(R.xml.rr_ls_media);
+        addPreferencesFromResource(R.xml.bluros_ls_media);
         ContentResolver resolver = getActivity().getContentResolver();
 	}
 

@@ -52,7 +52,7 @@ public class CustomLogo extends SettingsPreferenceFragment implements OnPreferen
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        addPreferencesFromResource(R.xml.rr_custom_logos);
+        addPreferencesFromResource(R.xml.bluros_custom_logos);
 
         PreferenceScreen prefSet = getPreferenceScreen();
 

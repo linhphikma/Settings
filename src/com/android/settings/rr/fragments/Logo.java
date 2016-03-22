@@ -42,8 +42,8 @@ public class Logo extends SettingsPreferenceFragment implements OnPreferenceChan
 
     public static final String TAG = "Logo";
 
-    private static final String KEY_RR_LOGO_COLOR = "status_bar_rr_logo_color";
-    private static final String KEY_RR_LOGO_STYLE = "status_bar_rr_logo_style";
+    private static final String KEY_RR_LOGO_COLOR = "status_bar_bluros_logo_color";
+    private static final String KEY_RR_LOGO_STYLE = "status_bar_bluros_logo_style";
 
     private ColorPickerPreference mRRLogoColor;
     private ListPreference mRRLogoStyle;
@@ -52,7 +52,7 @@ public class Logo extends SettingsPreferenceFragment implements OnPreferenceChan
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        addPreferencesFromResource(R.xml.rr_logo);
+        addPreferencesFromResource(R.xml.bluros_logo);
 
         PreferenceScreen prefSet = getPreferenceScreen();
 

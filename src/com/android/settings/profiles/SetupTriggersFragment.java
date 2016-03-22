@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2014 The CyanogenMod Project
+ * Copyright (C) 2014 The BlurOS Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -29,14 +29,14 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 
-import cyanogenmod.app.Profile;
-import cyanogenmod.app.ProfileManager;
+import bluros.app.Profile;
+import bluros.app.ProfileManager;
 
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.settings.SubSettings;
 import com.android.settings.profiles.triggers.NfcTriggerFragment;
-import org.cyanogenmod.internal.logging.CMMetricsLogger;
+import org.bluros.internal.logging.CMMetricsLogger;
 
 public class SetupTriggersFragment extends SettingsPreferenceFragment {
 

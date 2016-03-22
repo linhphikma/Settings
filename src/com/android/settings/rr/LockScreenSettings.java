@@ -52,7 +52,7 @@ public class LockScreenSettings extends SettingsPreferenceFragment  implements O
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        addPreferencesFromResource(R.xml.rr_lockscreen);
+        addPreferencesFromResource(R.xml.bluros_lockscreen);
         ContentResolver resolver = getActivity().getContentResolver();
 }
 
@@ -76,7 +76,7 @@ public class LockScreenSettings extends SettingsPreferenceFragment  implements O
                             new ArrayList<SearchIndexableResource>();
 
                     SearchIndexableResource sir = new SearchIndexableResource(context);
-                   sir.xmlResId = R.xml.rr_lockscreen;
+                   sir.xmlResId = R.xml.bluros_lockscreen;
                     result.add(sir);
 
                     return result;

@@ -134,7 +134,7 @@ public class DeviceInfoSettings extends SettingsPreferenceFragment implements In
         setValueSummary(KEY_BASEBAND_VERSION, "gsm.version.baseband");
         setValueSummary(KEY_EQUIPMENT_ID, PROPERTY_EQUIPMENT_ID);
         setStringSummary(KEY_DEVICE_MODEL, Build.MODEL);
-        setStringSummary(KEY_BUILD_NUMBER, "Resurrection Remix Marshmallow 6.0.1_r22 - MHC19J");
+        setStringSummary(KEY_BUILD_NUMBER, "1.0");
         findPreference(KEY_BUILD_NUMBER).setEnabled(true);
         findPreference(KEY_KERNEL_VERSION).setSummary(getFormattedKernelVersion());
         setValueSummary(KEY_MOD_VERSION, "ro.modversion");
@@ -426,9 +426,9 @@ public class DeviceInfoSettings extends SettingsPreferenceFragment implements In
     }
 
     private static String constructApiLevelString() {
-        int sdkInt = cyanogenmod.os.Build.CM_VERSION.SDK_INT;
+        int sdkInt = bluros.os.Build.CM_VERSION.SDK_INT;
         StringBuilder builder = new StringBuilder();
-        builder.append(cyanogenmod.os.Build.getNameForSDKInt(sdkInt))
+        builder.append(bluros.os.Build.getNameForSDKInt(sdkInt))
                 .append(" (" + sdkInt + ")");
         return builder.toString();
     }

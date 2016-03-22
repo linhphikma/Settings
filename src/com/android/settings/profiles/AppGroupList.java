@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2012 The CyanogenMod Project
+ * Copyright (C) 2012 The BlurOS Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -34,13 +34,13 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import cyanogenmod.app.ProfileManager;
+import bluros.app.ProfileManager;
 
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 
-import org.cyanogenmod.internal.logging.CMMetricsLogger;
-import org.cyanogenmod.internal.util.ScreenType;
+import org.bluros.internal.logging.CMMetricsLogger;
+import org.bluros.internal.util.ScreenType;
 
 public class AppGroupList extends SettingsPreferenceFragment {
 
