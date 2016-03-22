@@ -1800,33 +1800,7 @@
 	<string name="logo12">FingerPrint</string>	
 	<string name="logo13">Pugmark</string>	
 	<string name="logo14">Owl</string>
-	<string name="logo15">Weather Off </string>	
-	<string name="logo16">Blender </string>	
-	<string name="logo17">Cake</string>	
-	<string name="logo18">Electric Guitar</string>	
-	<string name="logo19">Smiley Tag</string>	
-	<string name="logo20">Run</string>	
-	<string name="logo21">Toxic</string>	
-	<string name="logo22">Pro User</string>	
-	<string name="logo23">Pokeball</string>
-	<string name="logo24">Box Open</string>	
-	<string name="logo25">Box Closed</string>	
-	<string name="logo26">Weather On</string>
-	<string name="logo27">Cat</string>
-	<string name="logo28">Bug Droid</string>	
-	<string name="logo29">Biker</string>	
-	<string name="logo30">Candy cane</string>	
-	<string name="logo31">Shit smiley</string>	
-	<string name="logo32">Chart bubble</string>	
-	<string name="logo33">Google</string>	
-	<string name="logo34">Fish</string>	
-	<string name="logo35">Gender male</string>	
-	<string name="logo36">Gender female</string>	
-	<string name="logo37">PitchBlack</string>	
-	<string name="logo38">Resurrection Orginal</string>	
-	<string name="logo39">Resurrection Half</string>	
-	<string name="logo40">Resurrection No-ring</string>
-	     
+     
      <string name="bluros_navbar_settings">Navbar</string>
 	
 	 
@@ -1950,5 +1924,9 @@
      <string name="smartbar_ime_action_none">None</string>
      <string name="smartbar_ime_action_arrows">Input arrows</string>
      <string name="smartbar_ime_action_switcher">Keyboard switcher</string>
+
+	<!-- Download Center -->
+	<string name="rr_download_center">Download Center</string>
+	<string name="download_banks_gapps">Download Latest BaNkS Dynamic GApps</string>
 
 </resources>
