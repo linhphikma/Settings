@@ -34,7 +34,7 @@ import android.preference.SwitchPreference;
 import com.android.settings.rr.SeekBarPreference;
 import android.provider.Settings;
 import com.android.settings.util.Helpers;
-import org.bluros.internal.util.CmLockPatternUtils;
+import org.cyanogenmod.internal.util.CmLockPatternUtils;
 import com.android.settings.Utils;
 import android.provider.SearchIndexableResource;
 import com.android.settings.search.BaseSearchIndexProvider;
@@ -45,7 +45,7 @@ import android.view.MenuInflater;
 import android.util.Log;
 
 import com.android.internal.logging.MetricsLogger;
-import bluros.providers.CMSettings;
+import cyanogenmod.providers.CMSettings;
 
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;

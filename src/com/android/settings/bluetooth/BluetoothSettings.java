@@ -61,7 +61,7 @@ import com.android.settingslib.bluetooth.BluetoothDeviceFilter;
 import com.android.settingslib.bluetooth.CachedBluetoothDevice;
 import com.android.settingslib.bluetooth.LocalBluetoothManager;
 
-import bluros.providers.CMSettings;
+import cyanogenmod.providers.CMSettings;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -226,6 +226,10 @@ public final class BluetoothSettings extends DeviceListPreferenceFragment implem
         // any onDeviceAdded() callbacks before setting up view in updateContent()
         if (mBluetoothEnabler != null) {
             mBluetoothEnabler.resume(getActivity());
+        }
+        if (mLocalAdapter != null) {
+            // enable page and inquiry scan
+            mLocalAdapter.setScanMode(BluetoothAdapter.SCAN_MODE_CONNECTABLE_DISCOVERABLE);
         }
         super.onResume();
 

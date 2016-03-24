@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2012 The BlurOS Project
+ * Copyright (C) 2012 The CyanogenMod Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -24,14 +24,14 @@ import android.preference.ListPreference;
 import android.preference.Preference;
 import android.preference.Preference.OnPreferenceChangeListener;
 
-import bluros.app.Profile;
-import bluros.app.ProfileGroup;
-import bluros.app.ProfileGroup.Mode;
-import bluros.app.ProfileManager;
+import cyanogenmod.app.Profile;
+import cyanogenmod.app.ProfileGroup;
+import cyanogenmod.app.ProfileGroup.Mode;
+import cyanogenmod.app.ProfileManager;
 
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
-import org.bluros.internal.logging.CMMetricsLogger;
+import org.cyanogenmod.internal.logging.CMMetricsLogger;
 
 public class ProfileGroupConfig extends SettingsPreferenceFragment implements
         OnPreferenceChangeListener {

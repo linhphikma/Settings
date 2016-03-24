@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2015 The BlurOS Project
+ * Copyright (C) 2015 The CyanogenMod Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -32,7 +32,7 @@ import android.widget.SeekBar;
 import android.widget.TextView;
 
 import com.android.settings.R;
-import bluros.providers.CMSettings;
+import cyanogenmod.providers.CMSettings;
 
 /**
  * Preference for selection of color temperature range for LiveDisplay
@@ -56,9 +56,9 @@ public class DisplayTemperature extends DialogPreference {
         mContext = context;
 
         mDefaultDayTemperature = mContext.getResources().getInteger(
-                org.bluros.platform.internal.R.integer.config_dayColorTemperature);
+                org.cyanogenmod.platform.internal.R.integer.config_dayColorTemperature);
         mDefaultNightTemperature = mContext.getResources().getInteger(
-                org.bluros.platform.internal.R.integer.config_nightColorTemperature);
+                org.cyanogenmod.platform.internal.R.integer.config_nightColorTemperature);
 
         setDialogLayoutResource(R.layout.display_temperature);
     }

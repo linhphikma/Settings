@@ -61,8 +61,8 @@ import com.android.settings.SettingsActivity;
 import com.android.settings.applications.ManageApplications;
 import com.android.settings.Utils;
 
-import bluros.power.PerformanceManager;
-import bluros.providers.CMSettings;
+import cyanogenmod.power.PerformanceManager;
+import cyanogenmod.providers.CMSettings;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -160,9 +160,9 @@ public class PowerUsageSummary extends PowerUsageBase
 
             // Filter out unsupported profiles
             final String[] entries = getResources().getStringArray(
-                    org.bluros.platform.internal.R.array.perf_profile_entries);
+                    org.cyanogenmod.platform.internal.R.array.perf_profile_entries);
             final int[] values = getResources().getIntArray(
-                    org.bluros.platform.internal.R.array.perf_profile_values);
+                    org.cyanogenmod.platform.internal.R.array.perf_profile_values);
             int i = 0;
             for (int j = 0; j < values.length; j++) {
                 if (values[j] < mNumPerfProfiles) {

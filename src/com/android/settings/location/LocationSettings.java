@@ -1,6 +1,6 @@
 /*
  * Copyright (C) 2011 The Android Open Source Project
- * Copyright (C) 2015 The BlurOS Project
+ * Copyright (C) 2015 The CyanogenMod Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -17,7 +17,7 @@
 
 package com.android.settings.location;
 
-import static bluros.hardware.CMHardwareManager.FEATURE_LONG_TERM_ORBITS;
+import static cyanogenmod.hardware.CMHardwareManager.FEATURE_LONG_TERM_ORBITS;
 
 import android.app.AlarmManager;
 import android.app.PendingIntent;
@@ -47,10 +47,10 @@ import com.android.internal.logging.MetricsLogger;
 import com.android.settings.R;
 import com.android.settings.SettingsActivity;
 import com.android.settings.Utils;
-import com.android.settings.bluros.LtoService;
+import com.android.settings.cyanogenmod.LtoService;
 import com.android.settings.widget.SwitchBar;
 
-import bluros.hardware.CMHardwareManager;
+import cyanogenmod.hardware.CMHardwareManager;
 
 import java.util.Collections;
 import java.util.Comparator;

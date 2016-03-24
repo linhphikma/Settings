@@ -20,12 +20,12 @@
          android:key="recents_bars"
          android:title="@string/recents_panel_recents_bars" >
 
-        <com.android.settings.bluros.CMSystemSettingSwitchPreference
+        <com.android.settings.cyanogenmod.CMSystemSettingSwitchPreference
                 android:key="recents_show_search_bar"
                 android:title="@string/recents_show_searchbar"
                 android:defaultValue="true" />
 
-        <com.android.settings.bluros.SystemSettingSwitchPreference
+        <com.android.settings.cyanogenmod.SystemSettingSwitchPreference
             android:key="systemui_recents_mem_display"
             android:title="@string/recents_show_membar_title"
             android:summary="@string/recents_show_membar_summary"
@@ -37,13 +37,13 @@
         android:key="recents_panel_2"
         android:title="@string/recents_panel_clear_all_category" >
 
-        <com.android.settings.bluros.SystemSettingSwitchPreference
+        <com.android.settings.cyanogenmod.SystemSettingSwitchPreference
             android:key="show_clear_all_recents"
             android:title="@string/show_clear_all_recents_button_title"
             android:summary="@string/show_clear_all_recents_button_summary"
             android:defaultValue="false" />
 
-        <com.android.settings.bluros.SystemSettingSwitchPreference
+        <com.android.settings.cyanogenmod.SystemSettingSwitchPreference
             android:key="recents_clear_all_dismiss_all"
             android:title="@string/recents_clear_all_dismiss_all_title"
             android:summary="@string/recents_clear_all_dismiss_all_summary"
@@ -81,14 +81,14 @@
             android:summary="@string/power_menu_animation_summary"
             android:persistent="false" />
 
-        <com.android.settings.bluros.SystemSettingSwitchPreference
+        <com.android.settings.cyanogenmod.SystemSettingSwitchPreference
             android:key="recents_full_screen_clock"
             android:title="@string/recents_full_screen_clock_title"
             android:summary="@string/recents_full_screen_clock_summary"
             android:defaultValue="false"
             android:dependency="immersive_recents" />
 
-        <com.android.settings.bluros.SystemSettingSwitchPreference
+        <com.android.settings.cyanogenmod.SystemSettingSwitchPreference
             android:key="recents_full_screen_date"
             android:title="@string/recents_full_screen_date_title"
             android:summary="@string/recents_full_screen_date_summary"

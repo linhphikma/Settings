@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2012 The BlurOS Project
+ * Copyright (C) 2012 The CyanogenMod Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -29,11 +29,11 @@ import android.view.MenuItem;
 
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
-import com.android.settings.bluros.CMSystemSettingSwitchPreference;
+import com.android.settings.cyanogenmod.CMSystemSettingSwitchPreference;
 
-import bluros.providers.CMSettings;
+import cyanogenmod.providers.CMSettings;
 
-import org.bluros.internal.logging.CMMetricsLogger;
+import org.cyanogenmod.internal.logging.CMMetricsLogger;
 
 public class BatteryLightSettings extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener {

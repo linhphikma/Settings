@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2015 The BlurOS Project
+ * Copyright (C) 2015 The CyanogenMod Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -19,9 +19,9 @@ import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
 
-import bluros.app.Profile;
-import bluros.app.ProfileManager;
-import bluros.providers.CMSettings;
+import cyanogenmod.app.Profile;
+import cyanogenmod.app.ProfileManager;
+import cyanogenmod.providers.CMSettings;
 
 import java.util.UUID;
 

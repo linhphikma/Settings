@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2014 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
+    android:title="@string/rr_misc_title" >
+
+    <PreferenceCategory
+        android:key="misc_1"
+        android:title="@string/misc_1" >
+
+    <!-- SELinux -->
+        <Preference
+            android:key="selinux_switch"
+            android:title="@string/selinux_switch_title"
+            android:summary="@string/selinux_switch_summary"
+            android:selectable="false"/>
+
+        <SwitchPreference
+            android:key="selinux"
+            android:title="@string/selinux_title"
+            android:defaultValue="false" />
+</PreferenceCategory>
+
+
+    <PreferenceCategory
+        android:key="misc_2"
+        android:title="@string/misc_2" >
+
+
+         <Preference
+            android:key="warning_multi_window"
+            android:summary="@string/warning_multi_window_text"
+            android:selectable="false"/>
+
+        <SwitchPreference
+            android:key="enable_multi_window"
+            android:title="@string/enable_multi_window"
+            android:summary="@string/enable_multi_window_summary"/>
+
+     <com.android.settings.cyanogenmod.SystemSettingSwitchPreference
+        android:key="headset_connect_player"
+        android:title="@string/headset_connect_player_title"
+        android:summary="@string/headset_connect_player_summary"
+        android:defaultValue="false" />
+
+
+
+   <Preference android:key="restart_systemui"
+        android:title="@string/restart_systemui" />
+
+        <!-- Weather Settings -->
+       <Preference
+           android:id="@+id/weather_settings"
+           android:title="@string/weather_settings_title">
+           <intent
+               android:action="android.intent.action.MAIN"
+               android:targetClass="com.cyanogenmod.lockclock.preference.Preferences"
+               android:targetPackage="com.cyanogenmod.lockclock" >
+               <extra android:name=":android:show_fragment"
+                   android:value="com.cyanogenmod.lockclock.preference.WeatherPreferences" />
+           </intent>
+       </Preference>
+
+
+
+</PreferenceCategory>
+
+
+    <PreferenceCategory
+        android:key="misc_4"
+        android:title="@string/misc_4" >
+
+    <com.android.settings.cyanogenmod.SystemSettingSwitchPreference
+        android:key="fingerprint_success_vib"
+        android:title="@string/fprint_sucess_vib_title"
+        android:summary="@string/fprint_sucess_vib_summary"
+        android:defaultValue="true" />
+
+
+</PreferenceCategory>
+
+
+    <PreferenceCategory
+        android:key="misc_3"
+        android:title="@string/misc_3" >
+
+     <!-- Ad Blocker -->
+        <Preference
+             android:title="@string/adaway_settings_title">
+             <intent
+                 android:action="android.intent.action.MAIN"
+                 android:targetPackage="org.adaway"
+                 android:targetClass="org.adaway.ui.BaseActivity" />
+        </Preference>
+
+
+    <com.android.settings.cyanogenmod.SystemSettingSwitchPreference
+        android:key="disable_fc_notifications"
+        android:title="@string/disable_fc_notifications_title"
+        android:summary="@string/disable_fc_notifications_summary"
+        android:defaultValue="false" />
+
+
+        <!-- Wakelock blocker -->
+        <PreferenceScreen
+            android:key="wakelock_blocker"
+            android:fragment="com.android.settings.rr.WakeLockBlocker"
+            android:title="@string/wakelock_blocker_title"
+            />
+
+     <!-- System APP Remover -->
+    <PreferenceScreen
+            android:id="@+id/system_app_remover"
+            android:title="@string/system_app_remover"
+            android:fragment="com.android.settings.rr.fragments.SystemappRemover" />
+
+      <ListPreference
+        android:key="media_scanner_on_boot"
+        android:title="@string/media_scanner_on_boot_title"
+        android:persistent="false"
+        android:entries="@array/media_scanner_on_boot_entries"
+        android:entryValues="@array/media_scanner_on_boot_values" />
+
+
+        <!-- Advanced options -->
+        <PreferenceScreen
+                android:key="advanced_sound_settings"
+                android:title="@string/advanced_sound_title"
+                android:persistent="false"
+                android:fragment="com.android.settings.slim.SoundSettings" />
+
+</PreferenceCategory>
+
+
+</PreferenceScreen>

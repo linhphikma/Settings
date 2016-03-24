@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Copyright (C) 2014 The BlurOS Project
+<!-- Copyright (C) 2014 The CyanogenMod Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -19,20 +19,30 @@
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"	
     android:title="@string/notification_panel_title">
 
-	<PreferenceCategory
+<PreferenceCategory
         android:title="@string/header_ui" >
 
 
     <PreferenceScreen
             android:key="rr_custom_header"
-            android:title="@string/bluros_custom_header_options"
+            android:title="@string/rr_custom_header_options"
             android:fragment="com.android.settings.rr.CustomHeader" />
 
-     <com.android.settings.cyanogenmod.SystemSettingSwitchPreference
-           android:key="enable_task_manager"
-           android:title="@string/enable_task_manager_title"
-           android:summary="@string/enable_task_manager_summary" />
+    <PreferenceScreen
+            android:key="rr_header"
+            android:title="@string/rr_header_options"
+            android:fragment="com.android.settings.rr.Header" />
 
-	</PreferenceCategory>
+    <PreferenceScreen
+            android:key="rr_header_fonts"
+            android:title="@string/rr_header_fonts"
+            android:fragment="com.android.settings.rr.HeaderFonts" />
+
+    <PreferenceScreen
+            android:key="rr_header_colors"
+            android:title="@string/rr_header_colors"
+            android:fragment="com.android.settings.rr.HeaderColors" />
+
+	   </PreferenceCategory>
 
 </PreferenceScreen>

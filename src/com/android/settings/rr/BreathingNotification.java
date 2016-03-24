@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2014-2015 The BlurOS Project
+ * Copyright (C) 2014-2015 The CyanogenMod Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -60,7 +60,7 @@ import java.util.Date;
 import java.util.List;
 import java.util.Map;
 
-import bluros.providers.CMSettings;
+import cyanogenmod.providers.CMSettings;
 
 import net.margaritov.preference.colorpicker.ColorPickerPreference;
 

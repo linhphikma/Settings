@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2012 The BlurOS Project
+ * Copyright (C) 2012 The CyanogenMod Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -43,20 +43,20 @@ import android.widget.ListView;
 
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
-import com.android.settings.bluros.CMSystemSettingSwitchPreference;
-import com.android.settings.bluros.PackageListAdapter;
-import com.android.settings.bluros.PackageListAdapter.PackageItem;
-import com.android.settings.bluros.SystemSettingSwitchPreference;
+import com.android.settings.cyanogenmod.CMSystemSettingSwitchPreference;
+import com.android.settings.cyanogenmod.PackageListAdapter;
+import com.android.settings.cyanogenmod.PackageListAdapter.PackageItem;
+import com.android.settings.cyanogenmod.SystemSettingSwitchPreference;
 
-import org.bluros.internal.logging.CMMetricsLogger;
+import org.cyanogenmod.internal.logging.CMMetricsLogger;
 
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import bluros.providers.CMSettings;
-import bluros.util.ColorUtils;
+import cyanogenmod.providers.CMSettings;
+import cyanogenmod.util.ColorUtils;
 
 public class NotificationLightSettings extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener, AdapterView.OnItemLongClickListener {
@@ -130,13 +130,13 @@ public class NotificationLightSettings extends SettingsPreferenceFragment implem
                 findPreference(CMSettings.System.NOTIFICATION_LIGHT_PULSE_CUSTOM_ENABLE);
         mCustomEnabledPref.setOnPreferenceChangeListener(this);
         if (!resources.getBoolean(
-                org.bluros.platform.internal.R.bool.config_adjustableNotificationLedBrightness)) {
+                org.cyanogenmod.platform.internal.R.bool.config_adjustableNotificationLedBrightness)) {
             mAdvancedPrefs.removePreference(mNotificationLedBrightnessPref);
         } else {
             mNotificationLedBrightnessPref.setOnPreferenceChangeListener(this);
         }
         if (!resources.getBoolean(
-                org.bluros.platform.internal.R.bool.config_multipleNotificationLeds)) {
+                org.cyanogenmod.platform.internal.R.bool.config_multipleNotificationLeds)) {
             mAdvancedPrefs.removePreference(mMultipleLedsEnabledPref);
         } else {
             mMultipleLedsEnabledPref.setOnPreferenceChangeListener(this);

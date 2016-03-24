@@ -1,6 +1,6 @@
 /*
  * Copyright (C) 2010 The Android Open Source Project
- * Copyright (C) 2014 The BlurOS Project
+ * Copyright (C) 2014 The CyanogenMod Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -83,9 +83,9 @@ import android.util.Log;
 import java.util.ArrayList;
 import java.util.List;
 import com.android.settings.Utils;
-import com.android.settings.bluros.DisplayRotation;
+import com.android.settings.cyanogenmod.DisplayRotation;
 import com.android.settings.dashboard.DashboardContainerView;
-import bluros.providers.CMSettings;
+import cyanogenmod.providers.CMSettings;
 
 public class DisplaySettings extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener, OnPreferenceClickListener, Indexable {
@@ -312,12 +312,18 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
 
         mProximityCheckOnWakePreference = (SwitchPreference) findPreference(KEY_PROXIMITY_WAKE);
         boolean proximityCheckOnWake = getResources().getBoolean(
-                org.bluros.platform.internal.R.bool.config_proximityCheckOnWake);
+                org.cyanogenmod.platform.internal.R.bool.config_proximityCheckOnWake);
         if (!proximityCheckOnWake) {
             if (displayPrefs != null && mProximityCheckOnWakePreference != null) {
                 displayPrefs.removePreference(mProximityCheckOnWakePreference);
             }
-            CMSettings.System.putInt(getContentResolver(), CMSettings.System.PROXIMITY_ON_WAKE, 1);
+            CMSettings.System.putInt(getContentResolver(), CMSettings.System.PROXIMITY_ON_WAKE, 0);
+        } else {
+            boolean proximityCheckOnWakeDefault = getResources().getBoolean(
+                    org.cyanogenmod.platform.internal.R.bool.config_proximityCheckOnWakeEnabledByDefault);
+            mProximityCheckOnWakePreference.setChecked(CMSettings.System.getInt(getContentResolver(),
+                    CMSettings.System.PROXIMITY_ON_WAKE,
+                    (proximityCheckOnWakeDefault ? 1 : 0)) == 1);
         }
 
         mWakeWhenPluggedOrUnplugged =
@@ -853,7 +859,7 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
                         result.add(KEY_TAP_TO_WAKE);
                     }
                     if (!context.getResources().getBoolean(
-                            org.bluros.platform.internal.R.bool.config_proximityCheckOnWake)) {
+                            org.cyanogenmod.platform.internal.R.bool.config_proximityCheckOnWake)) {
                         result.add(KEY_PROXIMITY_WAKE);
                     }
                     if (!isCameraGestureAvailable(context.getResources())) {

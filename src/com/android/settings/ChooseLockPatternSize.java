@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2012-2013 The BlurOS Project
+ * Copyright (C) 2012-2013 The CyanogenMod Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -24,7 +24,7 @@ import android.preference.PreferenceScreen;
 
 import com.android.internal.logging.MetricsConstants;
 import com.android.internal.widget.LockPatternUtils;
-import org.bluros.internal.logging.CMMetricsLogger;
+import org.cyanogenmod.internal.logging.CMMetricsLogger;
 
 public class ChooseLockPatternSize extends PreferenceActivity {
 
@@ -92,8 +92,13 @@ public class ChooseLockPatternSize extends PreferenceActivity {
                         originatingIntent.getLongExtra(
                                 ChooseLockSettingsHelper.EXTRA_KEY_CHALLENGE, 0));
             }
+            // Forward the Encryption interstitial required password selection
+            if (originatingIntent.hasExtra(EncryptionInterstitial.EXTRA_REQUIRE_PASSWORD)) {
+                intent.putExtra(EncryptionInterstitial.EXTRA_REQUIRE_PASSWORD, originatingIntent
+                        .getBooleanExtra(EncryptionInterstitial.EXTRA_REQUIRE_PASSWORD, true));
+            }
             intent.addFlags(Intent.FLAG_ACTIVITY_FORWARD_RESULT);
-                    startActivity(intent);
+            startActivity(intent);
 
             finish();
             return true;

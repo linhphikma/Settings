@@ -29,8 +29,8 @@ import android.widget.ListView;
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.settings.Utils;
-import bluros.providers.CMSettings;
-import org.bluros.internal.logging.CMMetricsLogger;
+import cyanogenmod.providers.CMSettings;
+import org.cyanogenmod.internal.logging.CMMetricsLogger;
 
 public class PrivacyGuardPrefs extends SettingsPreferenceFragment implements
         OnPreferenceChangeListener {
@@ -55,7 +55,7 @@ public class PrivacyGuardPrefs extends SettingsPreferenceFragment implements
         mPrivacyGuardDefault = (SwitchPreference) findPreference(KEY_PRIVACY_GUARD_DEFAULT);
         mPrivacyGuardDefault.setOnPreferenceChangeListener(this);
 
-        mPrivacyGuardDefault.setChecked(Settings.Secure.getInt(getContentResolver(),
+        mPrivacyGuardDefault.setChecked(CMSettings.Secure.getInt(getContentResolver(),
                 CMSettings.Secure.PRIVACY_GUARD_DEFAULT, 0) == 1);
     }
 
@@ -75,7 +75,7 @@ public class PrivacyGuardPrefs extends SettingsPreferenceFragment implements
     public boolean onPreferenceChange(Preference preference, Object newValue) {
         if (preference == mPrivacyGuardDefault) {
             boolean value = (Boolean) newValue;
-            Settings.Secure.putInt(getContentResolver(),
+            CMSettings.Secure.putInt(getContentResolver(),
                     CMSettings.Secure.PRIVACY_GUARD_DEFAULT, value ? 1 : 0);
             return true;
         }

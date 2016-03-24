@@ -54,7 +54,7 @@ public class LockScreenGestures extends SettingsPreferenceFragment  implements O
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        addPreferencesFromResource(R.xml.bluros_ls_gestures);
+        addPreferencesFromResource(R.xml.rr_ls_gestures);
         ContentResolver resolver = getActivity().getContentResolver();
 	}
 

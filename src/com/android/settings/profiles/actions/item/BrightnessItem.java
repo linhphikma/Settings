@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2015 The BlurOS Project
+ * Copyright (C) 2015 The CyanogenMod Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -21,7 +21,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-import bluros.profiles.BrightnessSettings;
+import cyanogenmod.profiles.BrightnessSettings;
 
 import com.android.settings.R;
 import com.android.settings.profiles.actions.ItemListAdapter;

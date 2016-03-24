@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2014 The BlurOS Project
+ * Copyright (C) 2014 The CyanogenMod Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -37,9 +37,9 @@ import com.android.internal.logging.MetricsLogger;
 import com.android.settings.R;
 import com.android.settings.SettingsActivity;
 import com.android.settings.SettingsPreferenceFragment;
-import com.android.settings.bluros.BaseSystemSettingSwitchBar;
-import com.android.settings.bluros.ShortcutPickHelper;
-import org.bluros.internal.util.ScreenType;
+import com.android.settings.cyanogenmod.BaseSystemSettingSwitchBar;
+import com.android.settings.cyanogenmod.ShortcutPickHelper;
+import org.cyanogenmod.internal.util.ScreenType;
 
 import java.net.URISyntaxException;
 
@@ -53,13 +53,13 @@ public class VoiceWakeupSettings extends SettingsPreferenceFragment implements
     private static final String KEY_RETRAIN = "retrain";
     private static final String KEY_SHORTCUT_PICKER = "voice_wakeup_launch_intent";
 
-    public static final String VOICE_WAKEUP_PACKAGE = "com.bluros.voicewakeup";
+    public static final String VOICE_WAKEUP_PACKAGE = "com.cyanogenmod.voicewakeup";
     private static final ComponentName VOICE_TRAINING_COMPONENT = new ComponentName(
-            "com.bluros.voicewakeup", "com.bluros.voicewakeup.VoiceTrainingActivity");
+            "com.cyanogenmod.voicewakeup", "com.cyanogenmod.voicewakeup.VoiceTrainingActivity");
     private static final ComponentName VOICE_TRAINING_SERVICE = new ComponentName(
-            "com.bluros.voicewakeup", "com.bluros.voicewakeup.VoiceWakeupEngine");
+            "com.cyanogenmod.voicewakeup", "com.cyanogenmod.voicewakeup.VoiceWakeupEngine");
     private static final String ACTION_REQUEST_DIAL_PERMISSION
-            = "com.bluros.voicewakeup.ACTION_REQUEST_DIAL_PERMISSION";
+            = "com.cyanogenmod.voicewakeup.ACTION_REQUEST_DIAL_PERMISSION";
 
     private BaseSystemSettingSwitchBar mVoiceWakeupEnabler;
 

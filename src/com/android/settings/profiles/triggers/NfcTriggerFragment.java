@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2014 The BlurOS Project
+ * Copyright (C) 2014 The CyanogenMod Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -30,7 +30,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Toast;
 
-import bluros.app.Profile;
+import cyanogenmod.app.Profile;
 
 import com.android.settings.R;
 import com.android.settings.Settings;

@@ -262,7 +262,7 @@ public class LockscreenColors extends SettingsPreferenceFragment implements OnPr
             preference.setSummary(hex);
             return true;
         } 
-        return false;
+         return false;
     }
 
     @Override
@@ -338,6 +338,7 @@ public class LockscreenColors extends SettingsPreferenceFragment implements OnPr
                  Settings.System.LOCK_SCREEN_WEATHER_TEXT_COLOR, -2);
         mTextColor.setNewPreviewColor(-2);
         mTextColor.setSummary(R.string.default_string);
+
     }
 
     @Override

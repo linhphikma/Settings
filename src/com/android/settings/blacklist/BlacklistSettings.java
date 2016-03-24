@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2013 The BlurOS Project
+ * Copyright (C) 2013 The CyanogenMod Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -52,7 +52,7 @@ import com.android.internal.telephony.util.BlacklistUtils;
 import com.android.settings.R;
 import com.android.settings.SettingsActivity;
 import com.android.settings.SubSettings;
-import com.android.settings.bluros.BaseSystemSettingSwitchBar;
+import com.android.settings.cyanogenmod.BaseSystemSettingSwitchBar;
 
 import java.util.HashMap;
 

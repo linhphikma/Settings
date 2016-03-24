@@ -54,7 +54,7 @@ import com.android.settings.InstrumentedPreferenceActivity;
 import com.android.settings.R;
 import com.android.settings.Utils;
 
-import bluros.hardware.CMHardwareManager;
+import cyanogenmod.hardware.CMHardwareManager;
 
 import java.lang.ref.WeakReference;
 

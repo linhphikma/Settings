@@ -25,7 +25,7 @@ public class rrdrill extends SettingsPreferenceFragment implements
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        addPreferencesFromResource(R.xml.bluros_drill);
+        addPreferencesFromResource(R.xml.rr_drill);
     }
 
     @Override

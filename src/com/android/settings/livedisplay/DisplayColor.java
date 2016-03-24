@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2013-2015 The BlurOS Project
+ * Copyright (C) 2013-2015 The CyanogenMod Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -16,7 +16,7 @@
 
 package com.android.settings.livedisplay;
 
-import static bluros.hardware.CMHardwareManager.FEATURE_DISPLAY_COLOR_CALIBRATION;
+import static cyanogenmod.hardware.CMHardwareManager.FEATURE_DISPLAY_COLOR_CALIBRATION;
 
 import android.app.AlertDialog;
 import android.content.Context;
@@ -36,8 +36,8 @@ import android.widget.TextView;
 import com.android.settings.IntervalSeekBar;
 import com.android.settings.R;
 
-import bluros.hardware.CMHardwareManager;
-import bluros.providers.CMSettings;
+import cyanogenmod.hardware.CMHardwareManager;
+import cyanogenmod.providers.CMSettings;
 
 /**
  * Special preference type that allows configuration of Color settings
@@ -267,7 +267,7 @@ public class DisplayColor extends DialogPreference {
             IntervalSeekBar isb = (IntervalSeekBar)seekBar;
             float fp = isb.getProgressFloat();
             if (fromUser) {
-                mCurrentColors[mIndex] = fp;
+                mCurrentColors[mIndex] = fp > 1.0f ? 1.0f : fp;
                 updateColors(mCurrentColors);
             }
 

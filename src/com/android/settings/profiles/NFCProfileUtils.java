@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2012 The BlurOS Project
+ * Copyright (C) 2012 The CyanogenMod Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -25,7 +25,7 @@ import android.nfc.tech.NdefFormatable;
 import android.os.Vibrator;
 import android.util.Log;
 
-import bluros.app.Profile;
+import cyanogenmod.app.Profile;
 
 import java.io.IOException;
 import java.util.UUID;

@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2015 The BlurOS  Project
+ * Copyright (C) 2015 The Resurrection Remix  Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -83,7 +83,7 @@ private final ArrayList<Preference> mAllPrefs = new ArrayList<Preference>();
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        addPreferencesFromResource(R.xml.bluros_misc);
+        addPreferencesFromResource(R.xml.rr_misc);
 	  final ContentResolver resolver = getActivity().getContentResolver();
           final PreferenceScreen prefScreen = getPreferenceScreen();
         mEnableMultiWindow = (SwitchPreference) findPreference(ENABLE_MULTI_WINDOW_KEY);
@@ -195,7 +195,7 @@ private final ArrayList<Preference> mAllPrefs = new ArrayList<Preference>();
                             new ArrayList<SearchIndexableResource>();
 
                     SearchIndexableResource sir = new SearchIndexableResource(context);
-                   sir.xmlResId = R.xml.bluros_misc;
+                   sir.xmlResId = R.xml.rr_misc;
                     result.add(sir);
 
                     return result;

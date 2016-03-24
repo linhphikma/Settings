@@ -50,7 +50,7 @@ import android.preference.SwitchPreference;
 import com.android.internal.utils.du.ActionConstants;
 import com.android.internal.utils.du.Config;
 import com.android.internal.utils.du.DUActionUtils;
-import com.android.settings.bluros.SecureSettingSwitchPreference;
+import com.android.settings.cyanogenmod.SecureSettingSwitchPreference;
 import com.android.internal.utils.du.Config.ButtonConfig;
 import android.text.TextUtils;
 import android.widget.Toast;
@@ -89,7 +89,7 @@ public class Navbar extends SettingsPreferenceFragment implements
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        addPreferencesFromResource(R.xml.bluros_navbar_settings);
+        addPreferencesFromResource(R.xml.rr_navbar_settings);
 		
 		Activity activity = getActivity();
 		

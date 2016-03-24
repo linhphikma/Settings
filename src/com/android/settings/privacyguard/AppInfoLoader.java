@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2015 The BlurOS Project
+ * Copyright (C) 2015 The CyanogenMod Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -15,6 +15,7 @@
  */
 package com.android.settings.privacyguard;
 
+import android.Manifest;
 import android.app.AppOpsManager;
 import android.content.AsyncTaskLoader;
 import android.content.Context;
@@ -104,6 +105,8 @@ import java.util.List;
             app.uid = info.applicationInfo.uid;
             app.privacyGuardEnabled = mAppOps.getPrivacyGuardSettingForPackage(
                     app.uid, app.packageName);
+            app.hasInternetPermission = mPm.checkPermission(Manifest.permission.INTERNET,
+                    app.packageName) == PackageManager.PERMISSION_GRANTED;
             apps.add(app);
         }
 

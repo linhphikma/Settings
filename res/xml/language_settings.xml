@@ -51,6 +51,11 @@
         <!-- Enabled input method list will be populated programmatically here. -->
     </PreferenceCategory>
 
+    <PreferenceScreen
+        android:key="keyboard_input_settings"
+        android:fragment="com.android.settings.rr.InputMethodsSettings"
+        android:title="@string/title_keyboard_input" />
+
     <PreferenceCategory
             android:key="hard_keyboard"
             android:title="@string/builtin_keyboard_settings_title"
@@ -87,7 +92,7 @@
 
     </PreferenceCategory>
 
-    <com.android.settings.bluros.CMSystemSettingSwitchPreference
+    <com.android.settings.cyanogenmod.CMSystemSettingSwitchPreference
             android:key="status_bar_ime_switcher"
             android:title="@string/ime_switcher_notify"
             android:summary="@string/ime_switcher_notify_summary"
@@ -148,9 +153,9 @@
         <Preference
             android:key="gesture_pad_settings">
             <intent
-                android:action="com.bluros.action.LAUNCH_GESTURE_PAD_SETTINGS"
-                android:targetPackage="com.bluros.settings.device"
-                android:targetClass="com.bluros.settings.device.GesturePadSettings" />
+                android:action="com.cyanogenmod.action.LAUNCH_GESTURE_PAD_SETTINGS"
+                android:targetPackage="com.cyanogenmod.settings.device"
+                android:targetClass="com.cyanogenmod.settings.device.GesturePadSettings" />
         </Preference>
     </PreferenceCategory>
 

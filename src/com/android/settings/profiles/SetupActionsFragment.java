@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2014 The BlurOS Project
+ * Copyright (C) 2014 The CyanogenMod Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -57,19 +57,19 @@ import android.widget.ListView;
 import android.widget.SeekBar;
 import android.widget.TextView;
 
-import bluros.app.Profile;
-import bluros.app.ProfileGroup;
-import bluros.app.ProfileManager;
-import bluros.profiles.AirplaneModeSettings;
-import bluros.profiles.BrightnessSettings;
-import bluros.profiles.ConnectionSettings;
-import bluros.profiles.LockSettings;
-import bluros.profiles.RingModeSettings;
-import bluros.profiles.StreamSettings;
+import cyanogenmod.app.Profile;
+import cyanogenmod.app.ProfileGroup;
+import cyanogenmod.app.ProfileManager;
+import cyanogenmod.profiles.AirplaneModeSettings;
+import cyanogenmod.profiles.BrightnessSettings;
+import cyanogenmod.profiles.ConnectionSettings;
+import cyanogenmod.profiles.LockSettings;
+import cyanogenmod.profiles.RingModeSettings;
+import cyanogenmod.profiles.StreamSettings;
 
 import com.android.settings.R;
 import com.android.settings.SubSettings;
-import com.android.settings.bluros.DeviceUtils;
+import com.android.settings.cyanogenmod.DeviceUtils;
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.settings.profiles.actions.ItemListAdapter;
 import com.android.settings.profiles.actions.item.AirplaneModeItem;
@@ -88,19 +88,19 @@ import com.android.settings.profiles.actions.item.TriggerItem;
 import com.android.settings.profiles.actions.item.VolumeStreamItem;
 import com.android.settings.Utils;
 import com.android.settings.utils.TelephonyUtils;
-import org.bluros.internal.logging.CMMetricsLogger;
+import org.cyanogenmod.internal.logging.CMMetricsLogger;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import static bluros.profiles.ConnectionSettings.PROFILE_CONNECTION_2G3G4G;
-import static bluros.profiles.ConnectionSettings.PROFILE_CONNECTION_BLUETOOTH;
-import static bluros.profiles.ConnectionSettings.PROFILE_CONNECTION_GPS;
-import static bluros.profiles.ConnectionSettings.PROFILE_CONNECTION_MOBILEDATA;
-import static bluros.profiles.ConnectionSettings.PROFILE_CONNECTION_NFC;
-import static bluros.profiles.ConnectionSettings.PROFILE_CONNECTION_SYNC;
-import static bluros.profiles.ConnectionSettings.PROFILE_CONNECTION_WIFI;
-import static bluros.profiles.ConnectionSettings.PROFILE_CONNECTION_WIFIAP;
+import static cyanogenmod.profiles.ConnectionSettings.PROFILE_CONNECTION_2G3G4G;
+import static cyanogenmod.profiles.ConnectionSettings.PROFILE_CONNECTION_BLUETOOTH;
+import static cyanogenmod.profiles.ConnectionSettings.PROFILE_CONNECTION_GPS;
+import static cyanogenmod.profiles.ConnectionSettings.PROFILE_CONNECTION_MOBILEDATA;
+import static cyanogenmod.profiles.ConnectionSettings.PROFILE_CONNECTION_NFC;
+import static cyanogenmod.profiles.ConnectionSettings.PROFILE_CONNECTION_SYNC;
+import static cyanogenmod.profiles.ConnectionSettings.PROFILE_CONNECTION_WIFI;
+import static cyanogenmod.profiles.ConnectionSettings.PROFILE_CONNECTION_WIFIAP;
 
 public class SetupActionsFragment extends SettingsPreferenceFragment
         implements AdapterView.OnItemClickListener {

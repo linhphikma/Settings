@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2013 The BlurOS Project
+ * Copyright (C) 2013 The CyanogenMod Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -36,7 +36,7 @@ import android.widget.SeekBar;
 import android.widget.TextView;
 import android.widget.Button;
 
-import bluros.hardware.CMHardwareManager;
+import cyanogenmod.hardware.CMHardwareManager;
 
 import com.android.settings.R;
 
