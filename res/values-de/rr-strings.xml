@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<!-- Copyright (C) 2015 The ResurrectionRemix Project
+<!-- Copyright (C) 2015 The BlurOSRemix Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -19,43 +19,43 @@
 
 
     <!-- About RR -->
-    <string name="about_rr_settings_title">Über Resurrection</string>
-    <string name="about_rr">Über Resurrection</string>
-    <string name="about_rr_summary">@null</string>
+    <string name="about_bluros_settings_title">Über BlurOS</string>
+    <string name="about_rr">Über BlurOS</string>
+    <string name="about_bluros_summary">@null</string>
     <string name="about_r0m_summary">Alle Infos zur ROM</string>
-    <string name="rr_donate">Spenden für die Entwickler</string>
-    <string name="rr_donate_summary">Unterstützen Sie das Resurrection-Projekt</string>
-    <string name="app_name">Resurrection</string>
+    <string name="bluros_donate">Spenden für die Entwickler</string>
+    <string name="bluros_donate_summary">Unterstützen Sie das BlurOS-Projekt</string>
+    <string name="app_name">BlurOS</string>
     <string name="devs">Entwickler</string>
     <string name="github_westcrip">https://github.com/westcripp</string>
     <string name="github_varund7726">https://github.com/varund7726</string>
     <string name="github_akhilnaranag">https://github.com/akhilnaranag</string>
     <string name="github_bdogg718k">https://github.com/bdogg718k</string>			
-    <string name="github_cm">https://github.com/CyanogenMod</string>
+    <string name="github_cm">https://github.com/BlurOS</string>
     <string name="github_aokp">https://github.com/AOKP</string>
     <string name="github_omni">https://github.com/omnirom/</string>
     <string name="github_xenon92">https://github.com/xenon92</string>
     <string name="github_t4n017">https://github.com/t4n017</string>
     <string name="rr">Links</string>
-    <string name="rr_website_title">Webseite</string>
-    <string name="rr_website_summary">Mehr Informationen zur Resurrection-Rom erhalten</string>
-    <string name="rr_forum_title">Forum</string>
-    <string name="rr_forum_summary">Werden Sie Mitglied des Resurrection-Forums</string>
-    <string name="rr_source_title">Github</string>
-    <string name="rr_source_summary">Resurrection Sources</string>
-    <string name="rr_irc_title">Treten Sie mir im IRC bei</string>
-    <string name="rr_irc_summary">#aokp-sgs2 @ irc.freenode.net</string>
-    <string name="rr_facebook_title">Facebook</string>
-    <string name="rr_facebook_summary">Facebook-Community</string>
-    <string name="rr_google_plus_title">Google+</string>
-    <string name="rr_google_plus_summary">Google+ Community</string>
+    <string name="bluros_website_title">Webseite</string>
+    <string name="bluros_website_summary">Mehr Informationen zur BlurOS-Rom erhalten</string>
+    <string name="bluros_forum_title">Forum</string>
+    <string name="bluros_forum_summary">Werden Sie Mitglied des BlurOS-Forums</string>
+    <string name="bluros_source_title">Github</string>
+    <string name="bluros_source_summary">BlurOS Sources</string>
+    <string name="bluros_irc_title">Treten Sie mir im IRC bei</string>
+    <string name="bluros_irc_summary">#aokp-sgs2 @ irc.freenode.net</string>
+    <string name="bluros_facebook_title">Facebook</string>
+    <string name="bluros_facebook_summary">Facebook-Community</string>
+    <string name="bluros_google_plus_title">Google+</string>
+    <string name="bluros_google_plus_summary">Google+ Community</string>
     <string name="maincontributors_title">Entwickler</string>
     <string name="maintainer_categorie_title">Offizielle Geräte</string>
     <string name="sourcebase_title">Code-Basis</string>
-    <string name="title_about">Über Resurrection</string>
+    <string name="title_about">Über BlurOS</string>
     <string name="dev_categorie_title">Entwickler &amp; Maintainer</string>
 
-    <string name="rr_mod_version">Resurrection-Version</string>
+    <string name="bluros_mod_version">BlurOS-Version</string>
     
     <!-- Nfc settings -->
     <string name="nfc_polling_mode_title">NFC-Erkennung</string>
@@ -77,18 +77,18 @@
 
     <!-- Share RR ROM -->
     <string name="share_rr">ROM teilen</string>
-    <string name="share_rr_summary">Teilen Sie Resurrection Remix mit Ihren Freunden</string>
-    <string name="share_message">Probiere Resurrection Remix aus! http://forum.resurrectionremix.com/</string>
-    <string name="share_chooser_title">Teile Resurrection Remix via...</string>
+    <string name="share_bluros_summary">Teilen Sie BlurOS Remix mit Ihren Freunden</string>
+    <string name="share_message">Probiere BlurOS Remix aus! http://forum.resurrectionremix.com/</string>
+    <string name="share_chooser_title">Teile BlurOS Remix via...</string>
 
     <!-- RR settings categories -->
     <string name="header_category_personalization">Personalisierung</string>
-    <string name="rr_header_options">Kopfzeile: Verknüpfungen</string>
+    <string name="bluros_header_options">Kopfzeile: Verknüpfungen</string>
     <string name="interface_settings_title">Oberfläche</string>
 
 
-    <string name="rr_cat_title">Kategorien</string>
-    <string name="rr_settings_title">Konfigurationen</string>
+    <string name="bluros_cat_title">Kategorien</string>
+    <string name="bluros_settings_title">Konfigurationen</string>
 
     <!-- RR Feature lists-->
     <string name="features_title">ROM Feature-Liste</string>
@@ -122,11 +122,11 @@
 
 
     <string name="header_cat">Benachrichtigungskopfzeile</string>
-    <string name="rr_header_fonts">Kopfzeile: Schriftarten</string>
-    <string name="rr_header_colors">Kopfzeile: Farben</string>
-    <string name="rr_custom_header_options">Benutzerdefinierte Kopfzeilen</string>	
+    <string name="bluros_header_fonts">Kopfzeile: Schriftarten</string>
+    <string name="bluros_header_colors">Kopfzeile: Farben</string>
+    <string name="bluros_custom_header_options">Benutzerdefinierte Kopfzeilen</string>	
     <string name="header_ui">Kopfzeile: Oberfläche</string>	
-    <string name="rr_custom_header">Benutzerdefinierte Kopfzeilen</string>
+    <string name="bluros_custom_header">Benutzerdefinierte Kopfzeilen</string>
     <string name="notifications_cat">Benachrichtigungen</string>
     <string name="notifications_colors_cat">Benachrichtigungen: Farben</string>
 
@@ -139,7 +139,7 @@
     <!-- Color picker -->
     <string name="dialog_color_picker_title">Farbauswahl</string>
     <string name="press_color_to_apply">Zum Festlegen auf die Farbdarstellung unten tippen</string>
-    <string name="palette_darkkat_title">Resurrection</string>
+    <string name="palette_darkkat_title">BlurOS</string>
     <string name="palette_material_title">Material</string>
     <string name="palette_rgb_title">RGB</string>
     <string name="reset_android_title">Android-Standard</string>
@@ -264,9 +264,9 @@
     <string name="button24">Database Minus</string>	
     <string name="button25">Sequential Cube</string>	
     <string name="button26">Timer</string>
-    <string name="button27">Resurrection</string>
+    <string name="button27">BlurOS</string>
     <string name="button28">Android Stock</string>
-    <string name="button29">Resurrection Lollipop</string>
+    <string name="button29">BlurOS Lollipop</string>
 
     <string name="animation0">Rotation </string>	
     <string name="animation1">Recents Exit</string>	
@@ -296,10 +296,10 @@
 
     <!--Notification Drawer-->
     <string name="notification_drawer_title">Benachrichtigungsleiste</string>
-    <string name="rr_qs_cat">Schnelleinstellungen herunterziehen</string>
-    <string name="rr_qs">Schnelleinstellungen (QS)</string>
-    <string name="rr_brightness_cat">Helligkeitsregler</string>
-    <string name="rr_qs_title">Schnelleinstellungen</string>
+    <string name="bluros_qs_cat">Schnelleinstellungen herunterziehen</string>
+    <string name="bluros_qs">Schnelleinstellungen (QS)</string>
+    <string name="bluros_brightness_cat">Helligkeitsregler</string>
+    <string name="bluros_qs_title">Schnelleinstellungen</string>
     
 
     <!-- Quick settings quick pull down -->
@@ -404,18 +404,18 @@
     <!-- Lock screen rotation -->
     <string name="display_lockscreen_rotation_title">Sperrbildschirm</string>
 	<!-- Lock screen settings -->
-    <string name="rr_lockscreen_title">Sperrbildschirm</string>
-    <string name="rr_ls_ui">Benutzeroberfläche</string>
-    <string name="rr_lockscreen_date">Datum und Uhrzeit</string>
-    <string name="rr_ls_security_main">Sicherheit</string>
-    <string name="rr_lockscreen_notifications">Benachrichtigungen</string>
-    <string name="rr_ls_security">Sicherheit</string>
-    <string name="rr_ls_gestures">Gesten</string>
-    <string name="rr_ls_media">Medien</string>
-    <string name="rr_ls_gesures">Gesten</string>
-    <string name="rr_ls_settings">Anpassungen</string>
-    <string name="rr_lockscreen_blur">Unschärfe-Effekt</string>
-    <string name="rr_lockscreen_style">Stile</string>	
+    <string name="bluros_lockscreen_title">Sperrbildschirm</string>
+    <string name="bluros_ls_ui">Benutzeroberfläche</string>
+    <string name="bluros_lockscreen_date">Datum und Uhrzeit</string>
+    <string name="bluros_ls_security_main">Sicherheit</string>
+    <string name="bluros_lockscreen_notifications">Benachrichtigungen</string>
+    <string name="bluros_ls_security">Sicherheit</string>
+    <string name="bluros_ls_gestures">Gesten</string>
+    <string name="bluros_ls_media">Medien</string>
+    <string name="bluros_ls_gesures">Gesten</string>
+    <string name="bluros_ls_settings">Anpassungen</string>
+    <string name="bluros_lockscreen_blur">Unschärfe-Effekt</string>
+    <string name="bluros_lockscreen_style">Stile</string>	
     <string name="double_tap_ls">Doppeltes Tippen für den Tiefschlaf</string>
     <string name="double_tap_ls_summary">Zum Versetzen des Gerätes in den Standby-Betrieb zwei Mal auf den Sperrbildschirm tippen</string>	
 
@@ -1022,8 +1022,8 @@
     <string name="su_indicator_summary_on">SuperUser-Anzeige ist bei einer aktiven Sitzung sichtbar</string>
     <string name="su_indicator_summary_off">Verhindert die SuperUser-Anzeige bei einer aktiven Sitzung. Nur für CM-eigenes Root</string>
 
-    <string name="rr_misc_title">Verschiedenes</string>
-    <string name="rr_systemuituner">System UI-Tuner</string>
+    <string name="bluros_misc_title">Verschiedenes</string>
+    <string name="bluros_systemuituner">System UI-Tuner</string>
     <string name="enable_multi_window_summary">Mehrere Aktivitäten zur selben Zeit auf dem Bildschirm</string>
     <string name="warning_multi_window_text">WARNUNG: Dies ist ein sehr experimentelles Feature, welches die gleichzeitige Anzeige mehrerer Apps auf dem Bildschrim mithilfe der Recent Apps-Oberfläche ermöglicht. Manche Apps können abstürzen oder nicht vollständig funktionsfähig sein, wenn sie mit diesem Feature in Benutzung sind.</string>
 
@@ -1081,12 +1081,12 @@
 	<string name="show_carrier_enabled">Enabled</string>
 
     <!-- Statusbar RR logo -->
-    <string name="status_bar_logo">Resurrection-Logo</string>
-    <string name="status_bar_rr_logo_title">Logo anzeigen</string>
-    <string name="status_bar_rr_logo_summary">Anzeige des Logos in der Statusleiste aktivieren</string>
-    <string name="status_bar_rr_logo_color">Farbe des Logos</string>
-    <string name="status_bar_rr_logo_position">Logo location</string>
-    <string name="status_bar_rr_logo_position_summary">Choose which side to display the logo on, left or right</string>
+    <string name="status_bar_logo">BlurOS-Logo</string>
+    <string name="status_bar_bluros_logo_title">Logo anzeigen</string>
+    <string name="status_bar_bluros_logo_summary">Anzeige des Logos in der Statusleiste aktivieren</string>
+    <string name="status_bar_bluros_logo_color">Farbe des Logos</string>
+    <string name="status_bar_bluros_logo_position">Logo location</string>
+    <string name="status_bar_bluros_logo_position_summary">Choose which side to display the logo on, left or right</string>
     <string name="status_bar_logo_position_right">Right</string>
     <string name="status_bar_logo_position_left">Left</string>
     <string name="status_bar_logo_position_center">Center</string>
@@ -1166,7 +1166,7 @@
     <string name="status_bar_weather_font_notoserif_bold">NotoSerif Bold</string>
     <string name="status_bar_weather_font_notoserif_bold_italic">NotoSerif Bold Italic</string>		
 
-    <!-- Resurrection OTA -->
+    <!-- BlurOS OTA -->
     <string name="updater_title">Aktualisierungen</string>
 
     <!--Status bar date -->
@@ -1319,7 +1319,7 @@
     <string name="power_menu_onthego_title">On-The-Go Mode</string>
 
     <!-- The Drill -->
-    <string name="rr_drill_title">The Drill</string>
+    <string name="bluros_drill_title">The Drill</string>
 
     <!-- Hold back to kill timeout -->
     <string name="hold_back_to_kill_timeout_title">Kill app back button timeout</string>
@@ -1785,8 +1785,8 @@
     <string name="show_custom_logo_title">Show Custom Logo</string>
     <string name="show_custom_logo_summary">Show Logos in Statusbar from a wide range of icons available in System</string>
     <string name="custom_logo_color">Color</string>
-    <string name="logo0">Resurrection Dark</string>
-    <string name="logo1">Resurrection Light</string>	
+    <string name="logo0">BlurOS Dark</string>
+    <string name="logo1">BlurOS Light</string>	
     <string name="logo2">Tuner </string>	
     <string name="logo3">BugDroid Minimal </string>	
 	<string name="logo4">Drupal</string>	
@@ -1823,11 +1823,11 @@
 	<string name="logo35">Gender male</string>	
 	<string name="logo36">Gender female</string>
     <string name="logo37">PitchBlack</string>	
-	<string name="logo38">Resurrection Orginal</string>	
-	<string name="logo39">Resurrection Half</string>	
-	<string name="logo40">Resurrection No-ring</string>
+	<string name="logo38">BlurOS Orginal</string>	
+	<string name="logo39">BlurOS Half</string>	
+	<string name="logo40">BlurOS No-ring</string>
     	
-	<string name="rr_navbar_settings">Navigationsleiste</string>
+	<string name="bluros_navbar_settings">Navigationsleiste</string>
 	
 	 
     <!-- Navigation Bar -->

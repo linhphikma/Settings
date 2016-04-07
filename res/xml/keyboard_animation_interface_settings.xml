@@ -43,7 +43,7 @@
             android:persistent="false"
             android:defaultValue="0" />
 
-        <com.android.settings.rr.SeekBarPreferenceCham
+        <com.android.settings.bluros.SeekBarPreferenceCham
             android:key="ime_anim_duration"
             android:persistent="false"
             android:title="@string/ime_duration_title"
@@ -59,7 +59,7 @@
             android:key="ime_anim_reset"
             android:title="@string/animation_settings_reset_message" />
 
-        <com.android.settings.rr.utils.TestKeyboard
+        <com.android.settings.bluros.utils.TestKeyboard
             android:key="anim_ime_test"
             hint="@string/ime_animation_test_title" />
 

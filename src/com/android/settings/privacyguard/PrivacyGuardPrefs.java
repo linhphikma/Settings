@@ -29,8 +29,8 @@ import android.widget.ListView;
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.settings.Utils;
-import cyanogenmod.providers.CMSettings;
-import org.cyanogenmod.internal.logging.CMMetricsLogger;
+import bluros.providers.CMSettings;
+import org.bluros.internal.logging.CMMetricsLogger;
 
 public class PrivacyGuardPrefs extends SettingsPreferenceFragment implements
         OnPreferenceChangeListener {

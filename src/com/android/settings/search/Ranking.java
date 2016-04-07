@@ -25,7 +25,7 @@ import com.android.settings.DeviceInfoSettings;
 import com.android.settings.DisplaySettings;
 import com.android.settings.HomeSettings;
 import com.android.settings.LegalSettings;
-import com.android.settings.rr.MainSettings;
+import com.android.settings.bluros.MainSettings;
 import com.android.settings.PrivacySettings;
 import com.android.settings.ScreenPinningSettings;
 import com.android.settings.SecuritySettings;
@@ -36,7 +36,7 @@ import com.android.settings.accessibility.AccessibilitySettings;
 import com.android.settings.applications.AdvancedAppSettings;
 import com.android.settings.applications.ManageDefaultApps;
 import com.android.settings.bluetooth.BluetoothSettings;
-import com.android.settings.cyanogenmod.StatusBarSettings;
+import com.android.settings.bluros.StatusBarSettings;
 import com.android.settings.deviceinfo.StorageSettings;
 import com.android.settings.fuelgauge.PowerUsageSummary;
 import com.android.settings.inputmethod.InputMethodAndLanguageSettings;
@@ -50,12 +50,12 @@ import com.android.settings.notification.ZenModeAutomationSettings;
 import com.android.settings.notification.ZenModePrioritySettings;
 import com.android.settings.notification.ZenModeSettings;
 import com.android.settings.print.PrintSettingsFragment;
-import com.android.settings.rr.LockScreenSettings;
-import com.android.settings.rr.MiscSettings;
-import com.android.settings.rr.animation.AnimationSettings;
-import com.android.settings.rr.RecentsSettings;
-import com.android.settings.rr.ClockSettings;
-import com.android.settings.rr.NotificationDrawerSettings;
+import com.android.settings.bluros.LockScreenSettings;
+import com.android.settings.bluros.MiscSettings;
+import com.android.settings.bluros.animation.AnimationSettings;
+import com.android.settings.bluros.RecentsSettings;
+import com.android.settings.bluros.ClockSettings;
+import com.android.settings.bluros.NotificationDrawerSettings;
 import com.android.settings.sim.SimSettings;
 import com.android.settings.users.UserSettings;
 import com.android.settings.wifi.AdvancedWifiSettings;
@@ -132,7 +132,7 @@ public final class Ranking {
         // Home
         sRankMap.put(HomeSettings.class.getName(), RANK_HOME);
         
-        // Resurrection
+        // BlurOS
         sRankMap.put(MainSettings.class.getName(), RANK_RR);
         
         // Display

@@ -50,7 +50,7 @@ import com.android.settings.search.SearchIndexableRaw;
 import com.android.settings.wifi.AccessPointPreference.UserBadgeCache;
 import com.android.settingslib.wifi.AccessPoint;
 import com.android.settingslib.wifi.WifiTracker;
-import cyanogenmod.providers.CMSettings;
+import bluros.providers.CMSettings;
 
 import java.util.ArrayList;
 import java.util.Collections;

@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2013 The CyanogenMod project
+ * Copyright (C) 2013 The BlurOS project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -46,18 +46,18 @@ import android.view.KeyCharacterMap;
 import android.view.KeyEvent;
 import android.view.WindowManagerGlobal;
 
-import com.android.settings.cyanogenmod.ButtonBacklightBrightness;
+import com.android.settings.bluros.ButtonBacklightBrightness;
 import com.android.settings.R;
 import com.android.settings.search.BaseSearchIndexProvider;
 import com.android.settings.search.Indexable;
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.settings.Utils;
 
-import cyanogenmod.hardware.CMHardwareManager;
-import cyanogenmod.providers.CMSettings;
+import bluros.hardware.CMHardwareManager;
+import bluros.providers.CMSettings;
 
-import org.cyanogenmod.internal.logging.CMMetricsLogger;
-import org.cyanogenmod.internal.util.ScreenType;
+import org.bluros.internal.logging.CMMetricsLogger;
+import org.bluros.internal.util.ScreenType;
 import net.margaritov.preference.colorpicker.ColorPickerPreference;
 
 import java.util.ArrayList;

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-     Copyright (C) 2012-2016 The CyanogenMod Project
+     Copyright (C) 2012-2016 The BlurOS Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -44,8 +44,8 @@
     <!-- NFC PreferenceCategory title -->
     <string name="nfc_title_category">NFC</string>
 
-    <!-- About phone screen, CyanogenMod version -->
-    <string name="mod_version">CyanogenMod version</string>
+    <!-- About phone screen, BlurOS version -->
+    <string name="mod_version">BlurOS version</string>
     <string name="mod_version_default">Unknown</string>
 
     <!-- About phone screen, Device model -->
@@ -53,8 +53,8 @@
     <!-- About phone screen, Device name -->
     <string name="device_name">Device name</string>
 
-    <!-- About phone screen, CyanogenMod Api Level -->
-    <string name="mod_api_level">CyanogenMod API level</string>
+    <!-- About phone screen, BlurOS Api Level -->
+    <string name="mod_api_level">BlurOS API level</string>
     <string name="mod_api_level_default">Unknown</string>
 
     <!-- About phone screen, build date -->
@@ -842,8 +842,8 @@
     <string name="keep_screen_on_charging">While charging</string>
 
     <!-- Privacy Settings Header item -->
-    <string name="privacy_settings_cyanogenmod_title">Privacy</string>
-    <string name="privacy_settings_cyanogenmod_category" translatable="false">CyanogenMod</string>
+    <string name="privacy_settings_bluros_title">Privacy</string>
+    <string name="privacy_settings_bluros_category" translatable="false">BlurOS</string>
 
     <!-- Privacy Guard -->
     <string name="privacy_guard_default_title">Enabled by default</string>

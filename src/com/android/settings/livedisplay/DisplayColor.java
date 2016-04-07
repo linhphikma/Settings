@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2013-2015 The CyanogenMod Project
+ * Copyright (C) 2013-2015 The BlurOS Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -16,7 +16,7 @@
 
 package com.android.settings.livedisplay;
 
-import static cyanogenmod.hardware.CMHardwareManager.FEATURE_DISPLAY_COLOR_CALIBRATION;
+import static bluros.hardware.CMHardwareManager.FEATURE_DISPLAY_COLOR_CALIBRATION;
 
 import android.app.AlertDialog;
 import android.content.Context;
@@ -36,8 +36,8 @@ import android.widget.TextView;
 import com.android.settings.IntervalSeekBar;
 import com.android.settings.R;
 
-import cyanogenmod.hardware.CMHardwareManager;
-import cyanogenmod.providers.CMSettings;
+import bluros.hardware.CMHardwareManager;
+import bluros.providers.CMSettings;
 
 /**
  * Special preference type that allows configuration of Color settings

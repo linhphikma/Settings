@@ -47,7 +47,7 @@ import com.android.settings.Utils;
 import com.android.settings.hardware.VibratorIntensity;
 import com.android.settings.search.BaseSearchIndexProvider;
 import com.android.settings.search.Indexable;
-import cyanogenmod.providers.CMSettings;
+import bluros.providers.CMSettings;
 
 import java.util.ArrayList;
 import java.util.Arrays;

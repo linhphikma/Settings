@@ -66,8 +66,8 @@ import com.android.settings.search.Indexable;
 import com.android.settings.search.SearchIndexableRaw;
 
 import com.android.settings.voicewakeup.VoiceWakeupSettings;
-import cyanogenmod.hardware.CMHardwareManager;
-import cyanogenmod.providers.CMSettings;
+import bluros.hardware.CMHardwareManager;
+import bluros.providers.CMSettings;
 
 import java.text.Collator;
 import java.util.ArrayList;

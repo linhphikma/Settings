@@ -84,11 +84,11 @@
     <uses-permission android:name="android.permission.CHANGE_APP_IDLE_STATE" />
     <uses-permission android:name="android.permission.PEERS_MAC_ADDRESS"/>
     <uses-permission android:name="android.permission.ACCESS_KEYGUARD_SECURE_STORAGE" />
-    <uses-permission android:name="cyanogenmod.permission.HARDWARE_ABSTRACTION_ACCESS" />
-    <uses-permission android:name="cyanogenmod.permission.FINISH_SETUP" />
-    <uses-permission android:name="cyanogenmod.permission.MODIFY_PROFILES" />
-    <uses-permission android:name="cyanogenmod.permission.PROTECTED_APP" />
-    <uses-permission android:name="cyanogenmod.permission.PERFORMANCE_ACCESS" />
+    <uses-permission android:name="bluros.permission.HARDWARE_ABSTRACTION_ACCESS" />
+    <uses-permission android:name="bluros.permission.FINISH_SETUP" />
+    <uses-permission android:name="bluros.permission.MODIFY_PROFILES" />
+    <uses-permission android:name="bluros.permission.PROTECTED_APP" />
+    <uses-permission android:name="bluros.permission.PERFORMANCE_ACCESS" />
 
     <application android:label="@string/settings_label"
             android:icon="@mipmap/ic_launcher_settings"
@@ -143,8 +143,8 @@
         </receiver>
 
         <!-- Xposed support -->
-        <service android:name=".rr.XposedNotifyService" />
-        <receiver android:name=".rr.XposedCheckReceiver" android:enabled="true">
+        <service android:name=".bluros.XposedNotifyService" />
+        <receiver android:name=".bluros.XposedCheckReceiver" android:enabled="true">
             <intent-filter>
                 <action android:name="android.intent.action.BOOT_COMPLETED"/>
                 <action android:name="android.intent.action.PACKAGE_INSTALL" />
@@ -166,7 +166,7 @@
             </intent-filter>
         </activity>
 
-        <receiver android:name="com.android.settings.rr.util.OnBoot">
+        <receiver android:name="com.android.settings.bluros.util.OnBoot">
             <intent-filter>
                 <action android:name="android.intent.action.BOOT_COMPLETED"/>
             </intent-filter>
@@ -198,7 +198,7 @@
                 android:value="true" />
         </activity>
 
-        <activity android:name=".rr.About" />
+        <activity android:name=".bluros.About" />
 
         <activity android:name="AirplaneModeVoiceActivity"
                 android:label="@string/wireless_networks_settings_title"
@@ -1238,7 +1238,7 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
             <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
-                android:value="com.android.settings.rr.Pie.PieControl" />
+                android:value="com.android.settings.bluros.Pie.PieControl" />
             <meta-data android:name="com.android.settings.TOP_LEVEL_HEADER_ID"
                 android:resource="@id/button_settings" />
         </activity>
@@ -1969,10 +1969,10 @@
 
 
 
-        <activity android:name=".rr.gestureanywhere.GestureAnywhereBuilderActivity" />
-        <activity android:name=".rr.gestureanywhere.GestureAnywhereCreateGestureActivity" />
+        <activity android:name=".bluros.gestureanywhere.GestureAnywhereBuilderActivity" />
+        <activity android:name=".bluros.gestureanywhere.GestureAnywhereCreateGestureActivity" />
 
-	<activity android:name=".cyanogenmod.SpamList" />
+	<activity android:name=".bluros.SpamList" />
 	
 	<!-- Navigation settings activity. -->
         <activity android:name="Settings$NavigationSettingsActivity"
@@ -1983,11 +1983,11 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
             <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
-                android:value="com.android.settings.rr.Navbar" />
+                android:value="com.android.settings.bluros.Navbar" />
         </activity>
 
        <!-- System action picker -->
-        <activity android:name="com.android.settings.rr.ActionPickerDialogActivity"
+        <activity android:name="com.android.settings.bluros.ActionPickerDialogActivity"
                 android:theme="@style/Theme.SettingsDialog"
                 android:label="@string/choose_action_title"
                 android:excludeFromRecents="true">
@@ -1997,7 +1997,7 @@
         </activity>
 
        <!-- Icon pack picker -->
-        <activity android:name="com.android.settings.rr.IconPickerActivity"
+        <activity android:name="com.android.settings.bluros.IconPickerActivity"
                 android:theme="@style/Theme.SettingsDialog"
                 android:label="@string/icon_pack_picker_dialog_title"
                 android:excludeFromRecents="true">
@@ -2007,7 +2007,7 @@
         </activity>
 
        <!-- Icon picker proxy for gallery -->
-        <activity android:name="com.android.settings.rr.IconPickerGallery"
+        <activity android:name="com.android.settings.bluros.IconPickerGallery"
             android:theme="@style/Theme.SettingsDialog"
             android:label="@string/icon_pack_picker_dialog_title"
             android:excludeFromRecents="true">
@@ -2017,7 +2017,7 @@
         </activity>
 
        <!-- Icon pack grid -->
-        <activity android:name="com.android.settings.rr.IconPackGridActivity"
+        <activity android:name="com.android.settings.bluros.IconPackGridActivity"
                 android:excludeFromRecents="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -2033,7 +2033,7 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
             <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
-                android:value="com.android.settings.rr.SmartbarSettings" />
+                android:value="com.android.settings.bluros.SmartbarSettings" />
         </activity>
 
         <!-- Navigation settings activity. -->
@@ -2045,7 +2045,7 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
             <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
-                android:value="com.android.settings.rr.FlingSettings" />
+                android:value="com.android.settings.bluros.FlingSettings" />
         </activity>
 
         <!-- Development settings -->
@@ -2291,7 +2291,7 @@
             android:theme="@style/CryptKeeperBlankTheme"
         />
 
-        <!-- CyanogenMod activities Start -->
+        <!-- BlurOS activities Start -->
         <activity android:name="Settings$ProfilesSettingsActivity"
                 android:label="@string/profile_settings"
                 android:taskAffinity=""
@@ -2363,7 +2363,7 @@
                 <category android:name="android.intent.category.SHORTCUT" />
             </intent-filter>
             <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
-                android:value="com.android.settings.cyanogenmod.DisplayRotation" />
+                android:value="com.android.settings.bluros.DisplayRotation" />
             <meta-data android:name="com.android.settings.TOP_LEVEL_HEADER_ID"
                 android:resource="@id/display_and_lights_settings" />
         </activity>
@@ -2381,7 +2381,7 @@
         </activity-alias>
 
 
-        <activity android:name=".cyanogenmod.SpamList" />
+        <activity android:name=".bluros.SpamList" />
 
         <!-- "Blacklist settings" UI, used only on voice-capable phone devices. -->
         <activity android:name="Settings$BlacklistSettingsActivity"
@@ -2424,7 +2424,7 @@
                 android:value="com.android.settings.contributors.ContributorsCloudFragment" />
         </activity>
 
-        <!-- CyanogenMod activities End -->
+        <!-- BlurOS activities End -->
 
         <!-- Pseudo-activity used to provide an intent-filter entry point to encryption settings -->
         <activity android:name="Settings$CryptKeeperSettingsActivity"
@@ -2737,7 +2737,7 @@
         <activity android:name=".notificationlight.NotificationLightSettings" />
         <activity android:name=".notificationlight.BatteryLightSettings" />
 
-        <activity android:name=".cyanogenmod.PrivacySettings" />
+        <activity android:name=".bluros.PrivacySettings" />
 
         <activity android:name=".applications.ProtectedAppsActivity"
                   android:label="@string/protected_apps"
@@ -2781,7 +2781,7 @@
             </intent-filter>
         </receiver>
 
-        <receiver android:name=".cyanogenmod.BootReceiver" android:enabled="true">$
+        <receiver android:name=".bluros.BootReceiver" android:enabled="true">$
             <intent-filter android:priority="2147483647">$
                 <action android:name="android.intent.action.BOOT_COMPLETED" />$
             </intent-filter>$
@@ -2828,7 +2828,7 @@
         </activity>
 
         <!-- RR Extra info -->
-        <activity android:name="com.android.settings.rr.extrainfo.MainActivity"
+        <activity android:name="com.android.settings.bluros.extrainfo.MainActivity"
                   android:theme="@android:style/Theme.Holo.Dialog.NoActionBar.MinWidth">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -2836,33 +2836,37 @@
         </activity>
 
 
-        <!-- Resurrection Settings -->
+        <!-- BlurOS Settings -->
         <activity android:name="Settings$MainSettingsActivity"
-             android:label="@string/rr_settings_title"
+             android:label="@string/bluros_settings_title"
              android:taskAffinity="">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
             <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
-                android:value="com.android.settings.rr.MainSettings" />
+                android:value="com.android.settings.bluros.MainSettings" />
         </activity>
         <activity
-             android:name=".cyanogenmod.StatusBarSettings" />
+             android:name=".bluros.StatusBarSettings" />
         <activity
-             android:name=".rr.NotificationDrawerSettings" />
+             android:name=".bluros.NotificationDrawerSettings" />
         <activity
-             android:name=".rr.QsPanel" />
+             android:name=".bluros.InitD" />
         <activity
-             android:name=".rr.Navbar" />
+             android:name=".bluros.QsPanel" />
         <activity
-             android:name=".rr.ButtonSettings" />
+             android:name=".bluros.Navbar" />
         <activity
-             android:name=".rr.LockScreenSettings" />
+             android:name=".bluros.ButtonSettings" />
         <activity
-             android:name=".rr.MiscSettings" />
+             android:name=".bluros.LockScreenSettings" />
         <activity
-             android:name=".rr.LockScreenSettings" />
+             android:name=".bluros.MiscSettings" />
+        <activity
+             android:name=".bluros.LockScreenSettings" />
+        <activity
+             android:name=".bluros.animation.AnimationSettings" />
 
         <!-- Gesture Anywhere -->
         <activity android:name="Settings$GestrueAnywhereActivity"
@@ -2873,7 +2877,7 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
             <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
-                android:value="com.android.settings.rr.gestureanywhere.GestureAnywhereSettings" />
+                android:value="com.android.settings.bluros.gestureanywhere.GestureAnywhereSettings" />
         </activity>
 
         <!-- App Sidebar -->
@@ -2885,7 +2889,7 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
             <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
-                android:value="com.android.settings.rr.AppSidebar" />
+                android:value="com.android.settings.bluros.AppSidebar" />
         </activity>
 
      <!-- App Circle Bar -->
@@ -2897,7 +2901,7 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
             <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
-                android:value="com.android.settings.rr.fragments.AppCircleBar" />
+                android:value="com.android.settings.bluros.fragments.AppCircleBar" />
         </activity>
 
 
@@ -3022,11 +3026,11 @@
 
         <receiver android:name=".profiles.SetupDefaultProfileReceiver">
             <intent-filter>
-                <action android:name="com.cyanogenmod.setupwizard.SETUP_FINISHED" />
+                <action android:name="com.bluros.setupwizard.SETUP_FINISHED" />
             </intent-filter>
         </receiver>
 
-        <receiver android:name=".cyanogenmod.BootReceiver" android:enabled="true">
+        <receiver android:name=".bluros.BootReceiver" android:enabled="true">
             <intent-filter android:priority="2147483647">
                 <action android:name="android.intent.action.BOOT_COMPLETED" />
             </intent-filter>
@@ -3035,14 +3039,14 @@
         <service android:label="LtoService"
             android:enabled="true"
             android:exported="false"
-            android:name=".cyanogenmod.LtoService">
+            android:name=".bluros.LtoService">
         </service>
 
         <receiver
-            android:name=".cyanogenmod.ProtectedAppsReceiver"
-            android:permission="cyanogenmod.permission.PROTECTED_APP">
+            android:name=".bluros.ProtectedAppsReceiver"
+            android:permission="bluros.permission.PROTECTED_APP">
             <intent-filter>
-                <action android:name="cyanogenmod.intent.action.PACKAGE_PROTECTED" />
+                <action android:name="bluros.intent.action.PACKAGE_PROTECTED" />
             </intent-filter>
         </receiver>
 

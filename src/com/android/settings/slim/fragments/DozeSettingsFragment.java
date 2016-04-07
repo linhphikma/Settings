@@ -42,7 +42,7 @@ import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.internal.logging.MetricsLogger;
 
-import com.android.settings.cyanogenmod.SystemSettingSwitchPreference;
+import com.android.settings.bluros.SystemSettingSwitchPreference;
 
 public class DozeSettingsFragment extends SettingsPreferenceFragment implements
         OnPreferenceChangeListener {

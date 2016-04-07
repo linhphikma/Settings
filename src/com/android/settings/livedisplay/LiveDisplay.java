@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2015 The CyanogenMod Project
+ * Copyright (C) 2015 The BlurOS Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -15,11 +15,11 @@
  */
 package com.android.settings.livedisplay;
 
-import static cyanogenmod.hardware.CMHardwareManager.FEATURE_ADAPTIVE_BACKLIGHT;
-import static cyanogenmod.hardware.CMHardwareManager.FEATURE_COLOR_ENHANCEMENT;
-import static cyanogenmod.hardware.CMHardwareManager.FEATURE_DISPLAY_MODES;
-import static cyanogenmod.hardware.CMHardwareManager.FEATURE_DISPLAY_GAMMA_CALIBRATION;
-import static cyanogenmod.hardware.CMHardwareManager.FEATURE_SUNLIGHT_ENHANCEMENT;
+import static bluros.hardware.CMHardwareManager.FEATURE_ADAPTIVE_BACKLIGHT;
+import static bluros.hardware.CMHardwareManager.FEATURE_COLOR_ENHANCEMENT;
+import static bluros.hardware.CMHardwareManager.FEATURE_DISPLAY_MODES;
+import static bluros.hardware.CMHardwareManager.FEATURE_DISPLAY_GAMMA_CALIBRATION;
+import static bluros.hardware.CMHardwareManager.FEATURE_SUNLIGHT_ENHANCEMENT;
 
 import android.app.Activity;
 import android.database.ContentObserver;
@@ -48,10 +48,10 @@ import com.android.settings.Utils;
 import com.android.settings.search.BaseSearchIndexProvider;
 import com.android.settings.search.Indexable;
 
-import cyanogenmod.hardware.CMHardwareManager;
-import cyanogenmod.hardware.DisplayMode;
-import cyanogenmod.providers.CMSettings;
-import org.cyanogenmod.internal.logging.CMMetricsLogger;
+import bluros.hardware.CMHardwareManager;
+import bluros.hardware.DisplayMode;
+import bluros.providers.CMSettings;
+import org.bluros.internal.logging.CMMetricsLogger;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -117,9 +117,9 @@ public class LiveDisplay extends SettingsPreferenceFragment implements
         final Resources res = getResources();
 
         mDefaultDayTemperature = res.getInteger(
-                org.cyanogenmod.platform.internal.R.integer.config_dayColorTemperature);
+                org.bluros.platform.internal.R.integer.config_dayColorTemperature);
         mDefaultNightTemperature = res.getInteger(
-                org.cyanogenmod.platform.internal.R.integer.config_nightColorTemperature);
+                org.bluros.platform.internal.R.integer.config_nightColorTemperature);
 
         mHardware = CMHardwareManager.getInstance(activity);
 
@@ -137,11 +137,11 @@ public class LiveDisplay extends SettingsPreferenceFragment implements
         mLiveDisplay.setValue(String.valueOf(adaptiveMode));
 
         mModeEntries = res.getStringArray(
-                org.cyanogenmod.platform.internal.R.array.live_display_entries);
+                org.bluros.platform.internal.R.array.live_display_entries);
         mModeValues = res.getStringArray(
-                org.cyanogenmod.platform.internal.R.array.live_display_values);
+                org.bluros.platform.internal.R.array.live_display_values);
         mModeSummaries = res.getStringArray(
-                org.cyanogenmod.platform.internal.R.array.live_display_summaries);
+                org.bluros.platform.internal.R.array.live_display_summaries);
 
         // Remove outdoor mode from lists if there is no support
         if (!mHardware.isSupported(FEATURE_SUNLIGHT_ENHANCEMENT)) {

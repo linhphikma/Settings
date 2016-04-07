@@ -26,7 +26,7 @@
     <PreferenceScreen
         android:key="aokp_animation"
         android:title="@string/system_animation_title"
-        android:fragment="com.android.settings.rr.animation.AnimationControls" />
+        android:fragment="com.android.settings.bluros.animation.AnimationControls" />
 </PreferenceCategory>
 
     <PreferenceCategory
@@ -40,7 +40,7 @@
         android:entryValues="@array/toast_animation_values"
         android:persistent="false" />
 
-    <com.android.settings.cyanogenmod.SystemSettingSwitchPreference
+    <com.android.settings.bluros.SystemSettingSwitchPreference
         android:key="toast_icon"
         android:title="@string/toast_icon_title"
         android:summary="@string/toast_icon_summary"
@@ -79,7 +79,7 @@
 
   <PreferenceScreen
         android:key="ime_animations"
-	android:fragment="com.android.settings.rr.KeyboardAnimationInterfaceSettings" 
+	android:fragment="com.android.settings.bluros.KeyboardAnimationInterfaceSettings" 
         android:title="@string/ime_animation_title"
         android:summary="@string/ime_animation_summary" />
 

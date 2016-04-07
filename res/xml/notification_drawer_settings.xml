@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Copyright (C) 2014 The CyanogenMod Project
+<!-- Copyright (C) 2014 The BlurOS Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -69,12 +69,12 @@
         android:key="notification_2"
         android:title="@string/notifications_cat" >
 
-    <com.android.settings.cyanogenmod.SystemSettingSwitchPreference
+    <com.android.settings.bluros.SystemSettingSwitchPreference
         android:key="force_expanded_notifications"
         android:title="@string/force_expanded_notifications_title"
         android:summary="@string/force_expanded_notifications_summary" />
 
-    <com.android.settings.cyanogenmod.SystemSettingSwitchPreference
+    <com.android.settings.bluros.SystemSettingSwitchPreference
         android:key="disable_immersive_message"
         android:title="@string/disable_immersive_message_title"
         android:summary="@string/disable_immersive_message_summary" />
@@ -88,6 +88,6 @@
     <PreferenceScreen
             android:id="@+id/notification_colors"
             android:title="@string/cat_colors_title"
-            android:fragment="com.android.settings.rr.NotificationColorSettings" />
+            android:fragment="com.android.settings.bluros.NotificationColorSettings" />
  </PreferenceCategory>
 </PreferenceScreen>

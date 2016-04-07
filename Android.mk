@@ -6,7 +6,7 @@ LOCAL_STATIC_JAVA_LIBRARIES := \
 	android-support-v4 \
 	android-support-v13 \
 	jsr305 \
-	org.cyanogenmod.platform.internal
+	org.bluros.platform.internal
 
 LOCAL_MODULE_TAGS := optional
 
@@ -38,7 +38,7 @@ include frameworks/base/packages/SettingsLib/common.mk
 
 include $(BUILD_PACKAGE)
 
-LOCAL_PREBUILT_STATIC_JAVA_LIBRARIES := libsuperuser:src/com/android/settings/rr/lib/libsuperuser.jar
+LOCAL_PREBUILT_STATIC_JAVA_LIBRARIES := libsuperuser:src/com/android/settings.bluros/lib/libsuperuser.jar
 
 # Use the following include to make our test apk.
 ifeq (,$(ONE_SHOT_MAKEFILE))

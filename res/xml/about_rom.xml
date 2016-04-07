@@ -2,7 +2,7 @@
 
 <PreferenceScreen
 	xmlns:android="http://schemas.android.com/apk/res/android"
-    android:title="@string/about_rr_settings_title"
+    android:title="@string/about_bluros_settings_title"
 	xmlns:resurrection="http://schemas.android.com/apk/res/com.android.settings">
                 
  	<PreferenceCategory
@@ -12,59 +12,59 @@
     <PreferenceScreen android:key="changelog"
         android:title="@string/changelog_title"
         android:summary="@string/changelog_title_summary"
-        android:fragment="com.android.settings.rr.ChangeLog" />		              		
+        android:fragment="com.android.settings.bluros.ChangeLog" />		              		
 
         <!-- Features -->
     <PreferenceScreen android:key="features"
         android:title="@string/features_title"
         android:summary="@string/features_title_summary"
-        android:fragment="com.android.settings.rr.ResurrectionFeatures" />		
+        android:fragment="com.android.settings.bluros.BlurOSFeatures" />		
 
         <!-- Share RR ROM -->
          <Preference
              android:key="share"
              android:title="@string/share_rr"
-             android:summary="@string/share_rr_summary" />
+             android:summary="@string/share_bluros_summary" />
 
 
 
        <!-- Logcat or GTFO -->
 	<PreferenceScreen
             android:key="drill"
-            android:fragment="com.android.settings.rr.rrdrill"
-            android:title="@string/rr_drill_title"
+            android:fragment="com.android.settings.bluros.rrdrill"
+            android:title="@string/bluros_drill_title"
             />
              
 		<Preference
-			android:key="rr_website"
-			android:title="@string/rr_website_title"
-			android:summary="@string/rr_website_summary" />
+			android:key="bluros_website"
+			android:title="@string/bluros_website_title"
+			android:summary="@string/bluros_website_summary" />
 			
 		<Preference
-			android:key="rr_forum"
-			android:title="@string/rr_forum_title"
-			android:summary="@string/rr_forum_summary" />
+			android:key="bluros_forum"
+			android:title="@string/bluros_forum_title"
+			android:summary="@string/bluros_forum_summary" />
 
 		<Preference
-			android:key="rr_source"
-			android:title="@string/rr_source_title"
-			android:summary="@string/rr_source_summary" />
+			android:key="bluros_source"
+			android:title="@string/bluros_source_title"
+			android:summary="@string/bluros_source_summary" />
 
 
 		<Preference
-			android:key="rr_facebook"
-			android:title="@string/rr_facebook_title"
-			android:summary="@string/rr_facebook_summary" />
+			android:key="bluros_facebook"
+			android:title="@string/bluros_facebook_title"
+			android:summary="@string/bluros_facebook_summary" />
 			
 		<Preference
-			android:key="rr_google_plus"
-			android:title="@string/rr_google_plus_title"
-			android:summary="@string/rr_google_plus_summary" />
+			android:key="bluros_google_plus"
+			android:title="@string/bluros_google_plus_title"
+			android:summary="@string/bluros_google_plus_summary" />
 			
 		<Preference
-			android:key="rr_donate"
-			android:title="@string/rr_donate"
-			android:summary="@string/rr_donate_summary" />
+			android:key="bluros_donate"
+			android:title="@string/bluros_donate"
+			android:summary="@string/bluros_donate_summary" />
                 			
 </PreferenceCategory>
 				
@@ -74,7 +74,7 @@
 					
  	   <PreferenceScreen
         android:key="maintainers"
-        android:fragment="com.android.settings.rr.DeviceMaintainersFragment"
+        android:fragment="com.android.settings.bluros.DeviceMaintainersFragment"
         android:summary="@string/device_maintainers_title_summary"
         android:title="@string/device_maintainers_title" />
                  	

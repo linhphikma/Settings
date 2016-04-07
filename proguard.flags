@@ -16,11 +16,11 @@
 -keep class com.android.settings.users.*
 -keep class com.android.settings.nfc.*
 -keep class com.android.settings.notification.*
--keep class com.android.settings.cyanogenmod.*
+-keep class com.android.settings.bluros.*
 -keep class com.android.settings.slim.**
--keep class com.android.settings.rr.**
+-keep class com.android.settings.bluros.**
 
--keep class com.android.settings.cyanogenmod.*Settings
+-keep class com.android.settings.bluros.*Settings
 -keep class com.android.settings.privacyguard.*
 
 # These would be stripped out since they are being created with reflection

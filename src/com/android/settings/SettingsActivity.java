@@ -71,9 +71,9 @@ import com.android.settings.accessibility.CaptionPropertiesFragment;
 import com.android.settings.accounts.AccountSettings;
 import com.android.settings.accounts.AccountSyncSettings;
 import com.android.settings.applications.DrawOverlayDetails;
-import com.android.settings.rr.Navbar;
-import com.android.settings.rr.FlingSettings;
-import com.android.settings.rr.SmartbarSettings;
+import com.android.settings.bluros.Navbar;
+import com.android.settings.bluros.FlingSettings;
+import com.android.settings.bluros.SmartbarSettings;
 import com.android.settings.applications.InstalledAppDetails;
 import com.android.settings.applications.ManageApplications;
 import com.android.settings.applications.ManageAssist;
@@ -84,7 +84,7 @@ import com.android.settings.applications.WriteSettingsDetails;
 import com.android.settings.blacklist.BlacklistSettings;
 import com.android.settings.bluetooth.BluetoothSettings;
 import com.android.settings.contributors.ContributorsCloudFragment;
-import com.android.settings.cyanogenmod.DisplayRotation;
+import com.android.settings.bluros.DisplayRotation;
 import com.android.settings.dashboard.DashboardCategory;
 import com.android.settings.dashboard.DashboardSummary;
 import com.android.settings.dashboard.DashboardTile;
@@ -131,9 +131,9 @@ import com.android.settings.sim.SimSettings;
 import com.android.settings.tts.TextToSpeechSettings;
 import com.android.settings.users.UserSettings;
 import com.android.settings.ButtonSettings;
-import com.android.settings.rr.MainSettings;
-import com.android.settings.rr.fragments.AppCircleBar;
-import com.android.settings.rr.gestureanywhere.GestureAnywhereSettings;
+import com.android.settings.bluros.MainSettings;
+import com.android.settings.bluros.fragments.AppCircleBar;
+import com.android.settings.bluros.gestureanywhere.GestureAnywhereSettings;
 import com.android.settings.vpn2.VpnSettings;
 import com.android.settings.wfd.WifiDisplaySettings;
 import com.android.settings.widget.SwitchBar;
@@ -302,7 +302,7 @@ public class SettingsActivity extends Activity
 	    R.id.app_circle_bar,
 	    R.id.gesture_anywhere,
             R.id.dashboard,
-            R.id.privacy_settings_cyanogenmod
+            R.id.privacy_settings_bluros
     };
 
     private static final String[] ENTRY_FRAGMENTS = {
@@ -382,8 +382,8 @@ public class SettingsActivity extends Activity
             DrawOverlayDetails.class.getName(),
             WriteSettingsDetails.class.getName(),
             LiveDisplay.class.getName(),
-            com.android.settings.cyanogenmod.DisplayRotation.class.getName(),
-            com.android.settings.cyanogenmod.PrivacySettings.class.getName(),
+            com.android.settings.bluros.DisplayRotation.class.getName(),
+            com.android.settings.bluros.PrivacySettings.class.getName(),
             BlacklistSettings.class.getName(),
             ContributorsCloudFragment.class.getName(),
             ProfilesSettings.class.getName(),

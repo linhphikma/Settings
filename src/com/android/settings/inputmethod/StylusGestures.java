@@ -1,4 +1,4 @@
-/*   Copyright (C) 2012 The CyanogenMod Project
+/*   Copyright (C) 2012 The BlurOS Project
  *
  *    Licensed under the Apache License, Version 2.0 (the "License");
  *    you may not use this file except in compliance with the License.
@@ -32,7 +32,7 @@ import android.provider.Settings;
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 
-import org.cyanogenmod.internal.logging.CMMetricsLogger;
+import org.bluros.internal.logging.CMMetricsLogger;
 
 import java.util.Collections;
 import java.util.List;

@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2012 The CyanogenMod Project
+ * Copyright (C) 2012 The BlurOS Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -27,8 +27,8 @@ import android.os.Bundle;
 import android.util.Log;
 import android.widget.Toast;
 
-import cyanogenmod.app.Profile;
-import cyanogenmod.app.ProfileManager;
+import bluros.app.Profile;
+import bluros.app.ProfileManager;
 
 import com.android.settings.R;
 
