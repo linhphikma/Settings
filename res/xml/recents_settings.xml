@@ -29,7 +29,7 @@
             android:key="systemui_recents_mem_display"
             android:title="@string/recents_show_membar_title"
             android:summary="@string/recents_show_membar_summary"
-            android:defaultValue="false" />
+            android:defaultValue="true" />
 
     </PreferenceCategory>
 
@@ -41,7 +41,7 @@
             android:key="show_clear_all_recents"
             android:title="@string/show_clear_all_recents_button_title"
             android:summary="@string/show_clear_all_recents_button_summary"
-            android:defaultValue="false" />
+            android:defaultValue="true" />
 
         <com.android.settings.bluros.SystemSettingSwitchPreference
             android:key="recents_clear_all_dismiss_all"
@@ -105,12 +105,6 @@
             android:key="slim_recents"
             android:title="@string/slim_recents_panel"
 	    android:fragment="com.android.settings.bluros.Slimrecents" />
-
-        <PreferenceScreen
-            android:key="omniswitch"
-            android:id="@+id/omniswitch"
-            android:title="@string/omniswitch_settings_title"
-            android:fragment="com.android.settings.bluros.OmniSwitch" />
 
     </PreferenceCategory>
 

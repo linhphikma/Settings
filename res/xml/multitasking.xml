@@ -37,7 +37,6 @@
             android:key="app_sidebar"
             android:fragment="com.android.settings.bluros.AppSidebar"
             android:title="@string/app_sidebar_title"
-            android:icon="@drawable/ic_xd_sidebar" 
             />
              
 	<!-- Swipe back -->

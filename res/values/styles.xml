@@ -61,17 +61,17 @@
     </style>
 
     <style name="TextAppearance.info_label">
-        <item name="android:textSize">11sp</item>
+        <item name="android:textSize">14sp</item>
         <item name="android:textStyle">bold</item>
     </style>
 
     <style name="TextAppearance.info_small">
-        <item name="android:textSize">10sp</item>
+        <item name="android:textSize">12sp</item>
         <item name="android:textStyle">normal</item>
     </style>
 
     <style name="TextAppearance.info_value">
-        <item name="android:textSize">11sp</item>
+        <item name="android:textSize">14sp</item>
         <item name="android:textStyle">normal</item>
     </style>
 
@@ -301,10 +301,7 @@
         <item name="android:textColor">?android:attr/colorAccent</item>
     </style>
 
-    <style name="TextAppearance.TileTitle" parent="@android:style/TextAppearance.Material.Subhead" >
-		<item name="android:textSize">15sp</item>
-     </style>
-
+    <style name="TextAppearance.TileTitle" parent="@android:style/TextAppearance.Material.Subhead" />
     <style name="TextAppearance.TileSubTitle" parent="@android:style/TextAppearance.Material.Body1" />
 
     <style name="TextAppearance.RecentsTitle" parent="TextAppearance.CategoryTitle" />

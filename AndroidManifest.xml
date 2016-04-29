@@ -2827,7 +2827,7 @@
                 android:resource="@id/sim_settings" />
         </activity>
 
-        <!-- RR Extra info -->
+        <!-- Extra info -->
         <activity android:name="com.android.settings.bluros.extrainfo.MainActivity"
                   android:theme="@android:style/Theme.Holo.Dialog.NoActionBar.MinWidth">
             <intent-filter>
@@ -2843,6 +2843,7 @@
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.DEFAULT" />
+		<category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
             <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
                 android:value="com.android.settings.bluros.MainSettings" />
@@ -3027,12 +3028,6 @@
         <receiver android:name=".profiles.SetupDefaultProfileReceiver">
             <intent-filter>
                 <action android:name="com.bluros.setupwizard.SETUP_FINISHED" />
-            </intent-filter>
-        </receiver>
-
-        <receiver android:name=".bluros.BootReceiver" android:enabled="true">
-            <intent-filter android:priority="2147483647">
-                <action android:name="android.intent.action.BOOT_COMPLETED" />
             </intent-filter>
         </receiver>
 
