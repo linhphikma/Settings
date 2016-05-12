@@ -113,25 +113,6 @@
     </PreferenceCategory>
 
     <PreferenceCategory
-      android:key="category_doze_options"
-      android:title="@string/display_category_doze_options_title" >
-
-        <!-- Doze // Ambient display -->s
-        <SwitchPreference
-                android:key="doze"
-                android:title="@string/doze_title"
-                android:summary="@string/doze_summary"
-                android:persistent="false" />
-
-        <PreferenceScreen
-                android:fragment="com.android.settings.slim.fragments.DozeSettingsFragment"
-                android:key="advanced_doze_options"
-                android:title="@string/doze_settings_title"
-                android:dependency="doze" />
-
-    </PreferenceCategory>
-
-    <PreferenceCategory
             android:key="interface"
             android:title="@string/category_interface">
 
@@ -181,7 +162,7 @@
                 android:entries="@array/dashboard_columns_entries"
                 android:entryValues="@array/dashboard_columns_values"
                 android:summary="@string/dashboard_columns_summary"
-                android:persistent="false" />
+                android:persistent="true" />
 
 	<com.android.settings.bluros.SystemSettingSwitchPreference
                 android:key="dashboard_tileview_double_lines"

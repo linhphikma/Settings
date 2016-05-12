@@ -32,23 +32,13 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <!-- About RR -->
   <string name="about_bluros_settings_title">À propos de BlurOS</string>
-  <string name="about_rr">À propos de BlurOS</string>
+  <string name="about_bluros">À propos de BlurOS</string>
   <string name="about_bluros_summary">\@null</string>
   <string name="about_r0m_summary">Tout sur la ROM</string>
   <string name="bluros_donate">Faire un don pour le développement</string>
   <string name="bluros_donate_summary">Montrez votre soutien à la ROM BlurOS</string>
   <string name="app_name">BlurOS</string>
   <string name="devs">Développeurs</string>
-  <string name="github_westcrip">https://github.com/westcripp</string>
-  <string name="github_varund7726">https://github.com/varund7726</string>
-  <string name="github_akhilnaranag">https://github.com/akhilnaranag</string>
-  <string name="github_bdogg718k">https://github.com/bdogg718k</string>
-  <string name="github_cm">https://github.com/BlurOS</string>
-  <string name="github_aokp">https://github.com/AOKP</string>
-  <string name="github_omni">https://github.com/omnirom</string>
-  <string name="github_xenon92">https://github.com/xenon92</string>
-  <string name="github_t4n017">https://github.com/t4n017</string>
-  <string name="rr">Liens</string>
   <string name="bluros_website_title">Site Web</string>
   <string name="bluros_website_summary">Obtenir plus d\'information sur la ROM BlurOS</string>
   <string name="bluros_forum_title">Forum</string>
@@ -82,17 +72,11 @@
   <string name="changelog_error">Impossible de charger le journal des changements</string>
   <string name="changelog_unknown">Inconnu</string>
   <string name="changelog_version">Version</string>
-  <!-- Share RR ROM -->
-  <string name="share_rr">Partager la ROM</string>
-  <string name="share_bluros_summary">Laisser vos amis savoir que vous utilisez la ROM BlurOS</string>
-  <string name="share_message">Essayez la ROM BlurOS ! http://forum.resurrectionremix.com/</string>
-  <string name="share_chooser_title">Partager BlurOS Remix via…</string>
-  <!-- RR settings categories -->
   <string name="header_category_personalization">Personnalisation</string>
   <string name="bluros_header_options">Éléments d\'en-tête</string>
   <string name="interface_settings_title">Interface</string>
   <string name="bluros_cat_title">Catégories</string>
-  <string name="bluros_settings_title">Configurations</string>
+  <string name="bluros_settings_title">Customization</string>
   <!-- RR Feature lists-->
   <string name="features_title">Liste des fonctionnalités de la ROM</string>
   <string name="features_title_summary">Voir les fonctionnalités de la ROM disponibles</string>

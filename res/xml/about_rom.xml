@@ -7,7 +7,7 @@
                 
  	<PreferenceCategory
 		android:key="links"
-		android:title="@string/rr"> 
+		android:title="@string/bluros"> 
         <!-- Change Log -->
     <PreferenceScreen android:key="changelog"
         android:title="@string/changelog_title"
@@ -19,22 +19,7 @@
         android:title="@string/features_title"
         android:summary="@string/features_title_summary"
         android:fragment="com.android.settings.bluros.BlurOSFeatures" />		
-
-        <!-- Share RR ROM -->
-         <Preference
-             android:key="share"
-             android:title="@string/share_rr"
-             android:summary="@string/share_bluros_summary" />
-
-
-
-       <!-- Logcat or GTFO -->
-	<PreferenceScreen
-            android:key="drill"
-            android:fragment="com.android.settings.bluros.rrdrill"
-            android:title="@string/bluros_drill_title"
-            />
-             
+    
 		<Preference
 			android:key="bluros_website"
 			android:title="@string/bluros_website_title"
@@ -57,11 +42,6 @@
 			android:summary="@string/bluros_facebook_summary" />
 			
 		<Preference
-			android:key="bluros_google_plus"
-			android:title="@string/bluros_google_plus_title"
-			android:summary="@string/bluros_google_plus_summary" />
-			
-		<Preference
 			android:key="bluros_donate"
 			android:title="@string/bluros_donate"
 			android:summary="@string/bluros_donate_summary" />
@@ -69,67 +49,16 @@
 </PreferenceCategory>
 				
 	<PreferenceCategory
-		android:key="maintainer_categorie"
-		android:title="@string/maintainer_categorie_title">
-					
- 	   <PreferenceScreen
-        android:key="maintainers"
-        android:fragment="com.android.settings.bluros.DeviceMaintainersFragment"
-        android:summary="@string/device_maintainers_title_summary"
-        android:title="@string/device_maintainers_title" />
-                 	
-	</PreferenceCategory>
-
-	<PreferenceCategory
 		android:key="devs"
 		android:title="@string/dev_categorie_title">
 
 		<com.android.settings.widgets.DeveloperPreference
-            android:title="Westcrip"
-            resurrection:nameDev="westcrip"
-            resurrection:twitterHandle="westcrip"
-            resurrection:donateLink="@string/github_westcrip"
-            resurrection:emailDev="korukaltan@gmail.com"/>
+            android:title="LinhPhi"
+            resurrection:nameDev="linhphi"
+            resurrection:twitterHandle="linhphi9x94"
+            resurrection:donateLink="@string/github_linhphi"
+            resurrection:emailDev="linhphi9x94@gmail.com"/>
 
-</PreferenceCategory> 
-
-	<PreferenceCategory
-		android:key="dev_categorie_two"
-		android:title="@string/dev_categorie_title">
-
-		<com.android.settings.widgets.DeveloperPreference
-            android:title="varund7726"
-            resurrection:nameDev="varund7726"
-            resurrection:twitterHandle="VarunDate1"
-            resurrection:donateLink="@string/github_varund7726"
-            resurrection:emailDev="date.varun123@gmail.com"/>
-
-</PreferenceCategory> 
-
-	<PreferenceCategory
-		android:key="dev_categorie_three"
-		android:title="@string/dev_categorie_title">
-
-		<com.android.settings.widgets.DeveloperPreference
-            android:title="akhilnarang"
-            resurrection:nameDev="akhilnarang"
-            resurrection:donateLink="@string/github_akhilnaranag"
-            resurrection:emailDev="akhilnarang.1999@gmail.com"/>
-
-</PreferenceCategory> 
-
-	<PreferenceCategory
-		android:key="dev_categorie_four"
-		android:title="@string/dev_categorie_title">
-
-		<com.android.settings.widgets.DeveloperPreference
-            android:title="bdogg718k"
-            resurrection:nameDev="bdogg718k"
-            resurrection:twitterHandle="bdogg718k"
-            resurrection:donateLink="@string/github_bdogg718k"
-            resurrection:emailDev="bdogg718k@gmail.com"/>
-
-
-</PreferenceCategory>             
+</PreferenceCategory>            
 
 </PreferenceScreen>

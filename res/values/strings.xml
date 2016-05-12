@@ -7042,6 +7042,7 @@
 
     <!-- Name of feature to change color setting for the display [CHAR LIMIT=60] -->
     <string name="picture_color_mode">Picture color mode</string>
+    <string name="bluros_pow">Powered by BlurOS</string>
 
 
     <!-- Description of feature to change color setting for the display [CHAR LIMIT=NONE] -->

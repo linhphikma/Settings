@@ -76,6 +76,7 @@ public class Settings extends SettingsActivity {
     public static class UsageAccessSettingsActivity extends SettingsActivity { /* empty */ }
     public static class LocationSettingsActivity extends SettingsActivity { /* empty */ }
     public static class PrivacySettingsActivity extends SettingsActivity { /* empty */ }
+    public static class PrivacySettingsBlurOSActivity extends SettingsActivity { /* empty */ }
     public static class RunningServicesActivity extends SettingsActivity { /* empty */ }
     public static class ManageAccountsSettingsActivity extends SettingsActivity { /* empty */ }
     public static class PowerUsageSummaryActivity extends SettingsActivity { /* empty */ }
@@ -112,6 +113,7 @@ public class Settings extends SettingsActivity {
     public static class OtherSoundSettingsActivity extends SettingsActivity { /* empty */ }
     public static class DomainsURLsAppListActivity extends SettingsActivity { /* empty */ }
     public static class MainSettingsActivity extends SettingsActivity { /* empty */ }
+    public static class SplishActivityActivity extends SettingsActivity { /* empty */ }
     public static class TopLevelSettings extends SettingsActivity { /* empty */ }
     public static class ApnSettingsActivity extends SettingsActivity { /* empty */ }
     public static class WifiCallingSettingsActivity extends SettingsActivity { /* empty */ }
@@ -137,4 +139,5 @@ public class Settings extends SettingsActivity {
     public static class NavigationSettingsActivity extends SettingsActivity { /* empty */ }
     public static class FlingSettingsActivity extends SettingsActivity { /* empty */ }
     public static class SmartbarSettingsActivity extends SettingsActivity { /* empty */ }
+    public static class FloatingWindowActivity extends SettingsActivity { /* empty */ }
 }

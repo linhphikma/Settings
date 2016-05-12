@@ -93,30 +93,6 @@
         </dashboard-tile>
     </dashboard-category>
 
-    <!-- Personalization -->
-    <dashboard-category
-            android:id="@+id/device_personalization"
-            android:title="@string/header_category_personalization" >
-        <!-- BlurOSRemix -->
-        <dashboard-tile
-                android:id="@+id/main_settings"
-                android:title="@string/bluros_settings_title"
-                android:fragment="com.android.settings.bluros.MainSettings"
-                android:icon="@drawable/ic_bluros_tools_tint"
-                />        
-        <!-- Themes -->
-        <!-- NOTE: Intent.parseIntent looks for "categories" tag and not "category" -->
-        <dashboard-tile
-                android:id="@+id/theme_settings"
-                android:title="@string/themes_settings_title_rr"
-                android:icon="@drawable/ic_settings_themes">
-            <intent
-                    android:action="android.intent.action.MAIN" >
-                <categories android:name="bluros.intent.category.APP_THEMES" />
-            </intent>
-        </dashboard-tile>
-
-    </dashboard-category>
     <!-- DEVICE -->
     <dashboard-category
             android:id="@+id/device_section"
@@ -162,6 +138,16 @@
                 android:fragment="com.android.settings.fuelgauge.PowerUsageSummary"
                 android:icon="@drawable/ic_settings_battery"
                 />
+        <!-- Gestures -->
+        <dashboard-tile
+                android:id="@+id/device_specific_gesture_settings"
+                android:title="@string/gesture_settings_title"
+                android:icon="@drawable/ic_settings_gestures">
+            <intent
+                    android:action="com.bluros.action.LAUNCH_TOUCHSCREEN_GESTURE_SETTINGS"
+                    android:targetPackage="com.bluros.settings.device"
+                    android:targetClass="com.bluros.settings.device.TouchscreenGestureSettings" />
+        </dashboard-tile>
 
         <!-- Security -->
         <dashboard-tile
@@ -235,7 +221,7 @@
         <dashboard-tile
                 android:id="@+id/privacy_settings_bluros"
                 android:title="@string/privacy_settings_bluros_title"
-                android:fragment="com.android.settings.bluros.PrivacySettings"
+                android:fragment="com.android.settings.bluros.PrivacySettingsBlurOS"
                 android:icon="@drawable/ic_settings_privacy"
                 />
 
@@ -312,25 +298,6 @@
                 android:icon="@drawable/ic_settings_development"
                 />
 
-        <!-- SuperSU -->
-        <dashboard-tile
-            android:id="@+id/supersu_settings"
-            android:icon="@drawable/ic_settings_supersu"
-            android:title="@string/supersu_title">
-            <intent
-                android:action="android.intent.action.MAIN"
-                android:targetPackage="eu.chainfire.supersu"
-                android:targetClass="eu.chainfire.supersu.MainActivity" />
-        </dashboard-tile>
-    <dashboard-tile
-		android:id="@+id/kernel_adiutor"
-                android:title="@string/kernel_aduitor"
-		android:icon="@drawable/bluros_performance_icon">
- 	<intent
-                    android:action="android.intent.action.MAIN"
-                    android:targetPackage="com.grarak.kerneladiutor"
-                    android:targetClass="com.grarak.kerneladiutor.MainActivity" />
-	</dashboard-tile>
         <!-- About Device -->
         <dashboard-tile
                 android:id="@+id/about_settings"

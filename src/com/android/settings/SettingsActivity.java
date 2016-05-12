@@ -74,6 +74,7 @@ import com.android.settings.applications.DrawOverlayDetails;
 import com.android.settings.bluros.Navbar;
 import com.android.settings.bluros.FlingSettings;
 import com.android.settings.bluros.SmartbarSettings;
+import com.android.settings.bluros.FloatingWindows;
 import com.android.settings.applications.InstalledAppDetails;
 import com.android.settings.applications.ManageApplications;
 import com.android.settings.applications.ManageAssist;
@@ -132,6 +133,8 @@ import com.android.settings.tts.TextToSpeechSettings;
 import com.android.settings.users.UserSettings;
 import com.android.settings.ButtonSettings;
 import com.android.settings.bluros.MainSettings;
+import com.android.settings.bluros.PrivacySettingsBlurOS;
+import com.android.settings.bluros.SplishActivity;
 import com.android.settings.bluros.fragments.AppCircleBar;
 import com.android.settings.bluros.gestureanywhere.GestureAnywhereSettings;
 import com.android.settings.vpn2.VpnSettings;
@@ -297,10 +300,9 @@ public class SettingsActivity extends Activity
             R.id.accessibility_settings,
             R.id.print_settings,
             R.id.home_settings,
-            R.id.main_settings,
-	    R.id.button_settings,
-	    R.id.app_circle_bar,
-	    R.id.gesture_anywhere,
+			R.id.button_settings,
+			R.id.app_circle_bar,
+			R.id.gesture_anywhere,
             R.id.dashboard,
             R.id.privacy_settings_bluros
     };
@@ -323,8 +325,10 @@ public class SettingsActivity extends Activity
             UserDictionarySettings.class.getName(),
             HomeSettings.class.getName(),
             MainSettings.class.getName(),
+            SplishActivity.class.getName(),
             AppCircleBar.class.getName(),
-	    GestureAnywhereSettings.class.getName(),	
+			GestureAnywhereSettings.class.getName(),	
+            FloatingWindows.class.getName(),
             ButtonSettings.class.getName(),
             DisplaySettings.class.getName(),
             DeviceInfoSettings.class.getName(),
@@ -383,7 +387,7 @@ public class SettingsActivity extends Activity
             WriteSettingsDetails.class.getName(),
             LiveDisplay.class.getName(),
             com.android.settings.bluros.DisplayRotation.class.getName(),
-            com.android.settings.bluros.PrivacySettings.class.getName(),
+            PrivacySettingsBlurOS.class.getName(),
             BlacklistSettings.class.getName(),
             ContributorsCloudFragment.class.getName(),
             ProfilesSettings.class.getName(),
@@ -1335,25 +1339,6 @@ public class SettingsActivity extends Activity
                             UserManager.DISALLOW_DEBUGGING_FEATURES)) {
                         removeTile = true;
                     }
-                } else if (id == R.id.supersu_settings) {
-                    // Embedding into Settings is supported from SuperSU v1.85 and up
-                    boolean supported = false;
-                    try {
-                        supported = (getPackageManager().getPackageInfo("eu.chainfire.supersu", 0).versionCode >= 185);
-                    } catch (PackageManager.NameNotFoundException e) {
-                    }
-                    if (!supported) {
-                        removeTile = true;
-                    }
-		 }else if (id == R.id.kernel_adiutor) {
-                    boolean supported = false;
-                    try {
-                        supported = (getPackageManager().getPackageInfo("com.grarak.kerneladiutor", 0).versionCode > 0);
-                    } catch (PackageManager.NameNotFoundException e) {
-                    }
-                    if (!supported) {
-                        removeTile = true;
-                   }
                 }
 
                 if (UserHandle.MU_ENABLED && UserHandle.myUserId() != 0

@@ -64,6 +64,12 @@
                           android:layout_alignParentStart="true"
                           android:layout_toStartOf="@+id/dashboard_switch"
                           android:textColor="?android:attr/textColorSecondary" />
+                          
+                <ImageView android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:src="@drawable/arrow"
+							android:layout_alignParentRight="true"
+							android:layout_centerVertical="true"/> 
 
             </RelativeLayout>
 
@@ -81,5 +87,11 @@
               android:background="?android:attr/dividerVertical" />
 
     </LinearLayout>
+         <!-- Rightend Arrow 
+     <ImageView android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/arrow"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"/> -->
 
 </LinearLayout>

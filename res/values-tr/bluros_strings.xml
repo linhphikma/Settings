@@ -20,7 +20,7 @@
 
     <!-- About RR -->
     <string name="about_bluros_settings_title">BlurOS Hakkında</string>
-    <string name="about_rr">BlurOS Hakkında</string>
+    <string name="about_bluros">BlurOS Hakkında</string>
     <string name="about_bluros_summary">@null</string>
     <string name="about_r0m_summary">Rom ile ilgili her şey</string>
     <string name="bluros_donate">Geliştirme için Bağış</string>
@@ -79,7 +79,7 @@
     <string name="share_rr">Rom\'u Paylaş</string>
     <string name="share_bluros_summary">İnsanlar BlurOS Rom kullandığını bilsinler</string>
     <string name="share_message">BlurOS Rom\'u Dene! http://forum.resurrectionremix.com/</string>
-    <string name="share_chooser_title">BlurOS Remix\'i aracılığı ile paylaş..</string>
+    <string name="share_chooser_title">BlurOS\'i aracılığı ile paylaş..</string>
 
     <!-- RR settings categories -->
     <string name="header_category_personalization">Kişiselleştirme</string>

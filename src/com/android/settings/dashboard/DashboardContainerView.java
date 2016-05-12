@@ -41,7 +41,7 @@ public class DashboardContainerView extends ViewGroup {
         mCellGapY = res.getDimension(R.dimen.dashboard_cell_gap_y);
         
         boolean isPrimary = UserHandle.getCallingUserId() == UserHandle.USER_OWNER;
-        int dashboardColumns = isPrimary ? getDashboardNumColumns() : 1;
+        int dashboardColumns = isPrimary ? getDashboardNumColumns() : 2;
 
         if (dashboardColumns == 1) {
             mNumColumns = 1;

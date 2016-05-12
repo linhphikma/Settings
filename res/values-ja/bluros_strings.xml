@@ -19,13 +19,13 @@
 
 
 	<!-- About RR -->
-	<string name="about_bluros_settings_title">BlurOS Remixについて</string>
-	<string name="about_rr">BlurOS Remixについて</string>
+	<string name="about_bluros_settings_title">BlurOSについて</string>
+	<string name="about_bluros">BlurOSについて</string>
 	<string name="about_bluros_summary">@null</string>
 	<string name="about_r0m_summary">このROMについてのすべて</string>
 	<string name="bluros_donate">開発を支援する</string>
 	<string name="bluros_donate_summary">RRへの支援を表明してください</string>
-	<string name="app_name">BlurOS Remix</string>
+	<string name="app_name">BlurOS</string>
 	<string name="devs">開発者</string>
 	<string name="github_westcrip">https://github.com/westcripp</string>
 	<string name="github_varund7726">https://github.com/varund7726</string>
@@ -38,11 +38,11 @@
 	<string name="github_t4n017">https://github.com/t4n017</string>
 	<string name="rr">リンク</string>
 	<string name="bluros_website_title">Webサイト</string>
-	<string name="bluros_website_summary">BlurOS Remixについてもっと知る</string>
+	<string name="bluros_website_summary">BlurOSについてもっと知る</string>
 	<string name="bluros_forum_title">フォーラム</string>
-	<string name="bluros_forum_summary">BlurOS Remixフォーラムのメンバーになる</string>
+	<string name="bluros_forum_summary">BlurOSフォーラムのメンバーになる</string>
 	<string name="bluros_source_title">GitHub</string>
-	<string name="bluros_source_summary">BlurOS Remixのソースコード</string>
+	<string name="bluros_source_summary">BlurOSのソースコード</string>
 	<string name="bluros_irc_title">IRCに参加する</string>
 	<string name="bluros_irc_summary">#aokp-sgs2 @ irc.freenode.net</string>
 	<string name="bluros_facebook_title">Facebook</string>
@@ -52,10 +52,10 @@
 	<string name="maincontributors_title">開発者</string>
 	<string name="maintainer_categorie_title">公式サポート端末</string>
 	<string name="sourcebase_title">Source Base</string>
-	<string name="title_about">BlurOS Remixについて</string>
+	<string name="title_about">BlurOSについて</string>
 	<string name="dev_categorie_title">開発者とメンテナ</string>
 
-	<string name="bluros_mod_version">BlurOS Remixバージョン</string>
+	<string name="bluros_mod_version">BlurOSバージョン</string>
 
 	<!-- Nfc settings -->
 	<string name="nfc_polling_mode_title">NFCポーリングモード</string>
@@ -78,8 +78,8 @@
 	<!-- Share RR ROM -->
 	<string name="share_rr">ROMを紹介する</string>
 	<string name="share_bluros_summary">みんなにRRを使っていることを知らせましょう</string>
-	<string name="share_message">BlurOS Remixを使ってみませんか？ http://resurrectionremix.com/</string>
-	<string name="share_chooser_title">BlurOS Remixを共有する...</string>
+	<string name="share_message">BlurOSを使ってみませんか？ http://resurrectionremix.com/</string>
+	<string name="share_chooser_title">BlurOSを共有する...</string>
 
 	<!-- RR settings categories -->
 	<string name="header_category_personalization">個人設定</string>
@@ -816,7 +816,7 @@
 	<string name="status_bar_carrier_font_style_title">フォントのスタイル</string>
 
 	<!-- Statusbar RR logo -->
-	<string name="status_bar_logo">BlurOS Remixロゴ</string>
+	<string name="status_bar_logo">BlurOSロゴ</string>
 	<string name="status_bar_bluros_logo_title">ロゴを表示</string>
 	<string name="status_bar_bluros_logo_summary">ステータスバー上にRRロゴを表示します</string>
 	<string name="status_bar_bluros_logo_color">ロゴの色</string>

@@ -117,6 +117,7 @@ public class MainSettings extends SettingsPreferenceFragment {
             frags[8] = new MultiTasking();
             frags[9] = new MiscSettings();
             frags[10] = new AnimationSettings();
+            frags[11] = new About();
         }
 
         @Override
@@ -149,6 +150,7 @@ public class MainSettings extends SettingsPreferenceFragment {
                     getString(R.string.gestures_settings),
                     getString(R.string.bluros_misc_title),
                     getString(R.string.animation_title),
+                    getString(R.string.about_bluros_settings_title),
                     };
         return titleString;
     }

@@ -20,7 +20,7 @@
 
     <!-- About RR -->
     <string name="about_bluros_settings_title">Über BlurOS</string>
-    <string name="about_rr">Über BlurOS</string>
+    <string name="about_bluros">Über BlurOS</string>
     <string name="about_bluros_summary">@null</string>
     <string name="about_r0m_summary">Alle Infos zur ROM</string>
     <string name="bluros_donate">Spenden für die Entwickler</string>
@@ -77,9 +77,9 @@
 
     <!-- Share RR ROM -->
     <string name="share_rr">ROM teilen</string>
-    <string name="share_bluros_summary">Teilen Sie BlurOS Remix mit Ihren Freunden</string>
-    <string name="share_message">Probiere BlurOS Remix aus! http://forum.resurrectionremix.com/</string>
-    <string name="share_chooser_title">Teile BlurOS Remix via...</string>
+    <string name="share_bluros_summary">Teilen Sie BlurOS mit Ihren Freunden</string>
+    <string name="share_message">Probiere BlurOS aus! http://forum.resurrectionremix.com/</string>
+    <string name="share_chooser_title">Teile BlurOS via...</string>
 
     <!-- RR settings categories -->
     <string name="header_category_personalization">Personalisierung</string>

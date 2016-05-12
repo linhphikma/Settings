@@ -74,13 +74,11 @@ public class About extends SettingsPreferenceFragment implements
 			
 public static final String TAG = "About";
     
-private static final String RR_ROM_SHARE = "share";
     
     Preference mSiteUrl;
     Preference mForumUrl;
     Preference mSourceUrl;
     Preference mFacebookUrl;
-    Preference mGoogleUrl;
     Preference mDonateUrl;
     
     @Override
@@ -93,7 +91,6 @@ private static final String RR_ROM_SHARE = "share";
         mForumUrl = findPreference("bluros_forum");
         mSourceUrl = findPreference("bluros_source");
         mFacebookUrl = findPreference("bluros_facebook");
-        mGoogleUrl = findPreference("bluros_google_plus");
         mDonateUrl = findPreference("bluros_donate");
         PreferenceGroup devsGroup = (PreferenceGroup) findPreference("devs");
         ArrayList<Preference> devs = new ArrayList<Preference>();
@@ -119,25 +116,16 @@ private static final String RR_ROM_SHARE = "share";
     @Override
     public boolean onPreferenceTreeClick(PreferenceScreen preferenceScreen, Preference preference) {
         if (preference == mSiteUrl) {
-            launchUrl("http://resurrectionremix.com/");
+            launchUrl("http://bluros.xdavn.com/");
         } else if (preference == mForumUrl) {
-            launchUrl("http://forum.resurrectionremix.com/");
+            launchUrl("http://xdavn.com/");
         } else if (preference == mSourceUrl) {
-            launchUrl("https://github.com/BlurOSRemix");
+            launchUrl("https://github.com/BlurOS");
         } else if (preference == mFacebookUrl) {
-            launchUrl("https://www.facebook.com/resurrectionremixrom");
-        } else if (preference == mGoogleUrl) {
-            launchUrl("https://plus.google.com/u/0/communities/109352646351468373340");
+            launchUrl("https://www.facebook.com/xdavn");
         } else if (preference == mDonateUrl) {
-            launchUrl("http://forum.xda-developers.com/donatetome.php?u=4144763");
-        } else if (preference.getKey().equals(RR_ROM_SHARE)) {
-            Intent intent = new Intent();
-            intent.setAction(Intent.ACTION_SEND);
-            intent.setType("text/plain");
-            intent.putExtra(Intent.EXTRA_TEXT, String.format(
-                    getActivity().getString(R.string.share_message)));
-            startActivity(Intent.createChooser(intent, getActivity().getString(R.string.share_chooser_title)));
-            }  else {
+            launchUrl("http://paypay.com");
+        }  else {
                 // If not handled, let preferences handle it.
                 return super.onPreferenceTreeClick(preferenceScreen, preference);
     }

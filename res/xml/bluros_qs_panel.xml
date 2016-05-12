@@ -46,12 +46,12 @@
             android:fragment="com.android.settings.bluros.QsVibrate" />
 
 
-    <!-- Qs Colors -->
+    <!-- Qs Colors 
     <PreferenceScreen
             android:id="@+id/qs_colors"
             android:title="@string/quick_settings_colors"
 	    android:summary="@string/qs_colors_summary"	
-            android:fragment="com.android.settings.bluros.QsColors" />
+            android:fragment="com.android.settings.bluros.QsColors" /> -->
 
 
     <SwitchPreference
@@ -72,13 +72,13 @@
          android:key="qs_show_brightness_slider"
          android:title="@string/qs_brightness_slider_title"
          android:summary="@string/qs_brightness_slider_summary"
-         android:defaultValue="true"/>
+         android:defaultValue="falsee"/>
 
        <com.android.settings.bluros.SystemSettingSwitchPreference
          android:key="brightness_icon"
          android:title="@string/brightness_icon_title"
          android:summary="@string/brightness_icon_summary"
          android:dependency="qs_show_brightness_slider"
-         android:defaultValue="true"/>
+         android:defaultValue="false"/>
 </PreferenceCategory>
 </PreferenceScreen>
